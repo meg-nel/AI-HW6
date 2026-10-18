@@ -4,3 +4,5 @@ python-dotenv
 pypdf
 beautifulsoup4
 tiktoken
+reportlab
+pypdfium2
