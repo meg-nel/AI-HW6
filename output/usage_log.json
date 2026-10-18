@@ -1,0 +1,26 @@
+[
+  {
+    "time": "2026-10-18T19:22:09+00:00",
+    "document": "data/practice_docs/p01_bluehen_quote.html",
+    "model": "gpt-5.6-luna",
+    "requests": 3,
+    "input_tokens": 34551,
+    "cache_read_tokens": 22581,
+    "cache_write_tokens": 11604,
+    "output_tokens": 191,
+    "cost_usd": 0.00180841,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:22:46+00:00",
+    "document": "data/practice_docs/p08_chapelst_email.eml",
+    "model": "gpt-5.6-luna",
+    "requests": 3,
+    "input_tokens": 34570,
+    "cache_read_tokens": 33746,
+    "cache_write_tokens": 458,
+    "output_tokens": 190,
+    "cost_usd": 0.00052631,
+    "priced_as": "gpt-6-luna"
+  }
+]
