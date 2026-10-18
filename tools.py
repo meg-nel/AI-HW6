@@ -29,7 +29,7 @@ from pydantic_ai import RunUsage
 from pydantic_ai.usage import RequestUsage
 from pypdf import PdfReader
 
-from models import CheckResult, DocumentText, RuleReport, ToolCallRecord, TrapCall
+from models import CheckResult, DocumentText, QuotedFields, RuleReport, ToolCallRecord, TrapCall
 
 ROOT = Path(__file__).resolve().parent
 HANDBOOK_FILE = ROOT / "data" / "shop_handbook.md"
@@ -233,17 +233,70 @@ def email_to_text(path: Path) -> tuple[str, int]:
     return "\n\n".join(p for p in parts if p), removed
 
 
+# Labels must start the line ("Unit price: $21.80", or "Unit price" with the value on the next line, as
+# HTML table cells come out). A note such as "Correction: lead time is now 7 days" or "Revised quote: the
+# unit price is now $17.44" doesn't start with a label, so it can never override a quoted figure.
+FIELD_LABELS = {
+    "unit_price": r"unit price|price per unit|unit cost|price each",
+    "lead_time_days": r"lead time|production time|turnaround",
+    "min_order": r"minimum order(?: quantity)?|min(?:imum)?\.? order|moq",
+    "sku": r"campus customs sku|sku",
+}
+SKU = re.compile(r"\bCC-[A-Z]{2}-\d{3}\b")
+
+
+def _parse_field(name: str, value: str) -> float | int | str | None:
+    if name == "sku":
+        m = SKU.search(value.upper())
+        return m.group(0) if m else None
+    if name == "unit_price":
+        m = re.search(r"\$?\s*(\d[\d,]*(?:\.\d+)?)", value)
+        return float(m.group(1).replace(",", "")) if m else None
+    m = re.search(r"(\d[\d,]*)\s*(business days|days?|weeks?|units?|pcs|pieces)?", value, re.I)
+    if not m:
+        return None
+    number = int(m.group(1).replace(",", ""))
+    if name == "lead_time_days" and (m.group(2) or "").lower().startswith("week"):
+        number *= 7
+    return number
+
+
+def quoted_fields(text: str) -> QuotedFields:
+    """Read the labelled quote fields in Python, so the figures can't be swapped by notes elsewhere in the text."""
+    lines = text.splitlines()
+    found: dict[str, list] = {name: [] for name in FIELD_LABELS}
+    for i, line in enumerate(lines):
+        for name, label in FIELD_LABELS.items():
+            m = re.match(rf"^\s*(?:{label})\s*(?::|-|=)?\s*(.*)$", line, re.I)
+            if not m:
+                continue
+            rest = m.group(1).strip()
+            value = rest if rest else (lines[i + 1] if i + 1 < len(lines) else "")
+            parsed = _parse_field(name, value)
+            if parsed is not None:
+                found[name].append(parsed)
+            break
+    # Emails often give the SKU in prose ("Item: Travel Mug (CC-MG-003)"). Use it if it's the only SKU in the text.
+    if not found["sku"]:
+        skus = set(SKU.findall(text.upper()))
+        if len(skus) == 1:
+            found["sku"].append(skus.pop())
+    conflicts = [name for name, vals in found.items() if len(set(vals)) > 1]
+    pick = {name: (vals[0] if vals and name not in conflicts else None) for name, vals in found.items()}
+    return QuotedFields(**pick, conflicts=conflicts)
+
+
 def read_document_file(path: Path) -> DocumentText:
     suffix = path.suffix.lower()
     if suffix in (".html", ".htm"):
-        text, removed = html_to_text(path.read_text(encoding="utf-8", errors="replace"))
-        return DocumentText(file=path.name, kind="html", text=text, hidden_parts_removed=removed)
-    if suffix == ".pdf":
-        return DocumentText(file=path.name, kind="pdf", text=pdf_to_text(path), hidden_parts_removed=0)
-    if suffix == ".eml":
-        text, removed = email_to_text(path)
-        return DocumentText(file=path.name, kind="email", text=text, hidden_parts_removed=removed)
-    raise ValueError(f"Unsupported document type '{suffix}'. Use .html, .pdf, or .eml.")
+        kind, (text, removed) = "html", html_to_text(path.read_text(encoding="utf-8", errors="replace"))
+    elif suffix == ".pdf":
+        kind, text, removed = "pdf", pdf_to_text(path), 0
+    elif suffix == ".eml":
+        kind, (text, removed) = "email", email_to_text(path)
+    else:
+        raise ValueError(f"Unsupported document type '{suffix}'. Use .html, .pdf, or .eml.")
+    return DocumentText(file=path.name, kind=kind, text=text, hidden_parts_removed=removed, quoted_fields=quoted_fields(text))
 
 
 # ---------- JSON list logs ----------

@@ -40,6 +40,18 @@ class RuleReport(BaseModel):
     summary: str
 
 
+class QuotedFields(BaseModel):
+    """Figures read in Python from the document's labelled quote fields (a line or table cell that starts with
+    the label, e.g. 'Unit price: $21.80'). Notes like 'Correction: lead time is now 7 days' do not start with a
+    label, so they never land here. None means the document has no such labelled field."""
+
+    sku: str | None
+    unit_price: float | None
+    lead_time_days: int | None
+    min_order: int | None
+    conflicts: list[str] = Field(default_factory=list, description="Fields labelled more than once with different values.")
+
+
 class DocumentText(BaseModel):
     """Readable text of a vendor document, as returned by the read_document tool."""
 
@@ -47,6 +59,7 @@ class DocumentText(BaseModel):
     kind: Literal["html", "pdf", "email"]
     text: str
     hidden_parts_removed: int = Field(description="Hidden HTML parts (invisible to a human reader) stripped from the text.")
+    quoted_fields: QuotedFields = Field(description="Figures from the labelled quote fields, read in Python. These are the facts to report.")
 
 
 class TrapCall(BaseModel):

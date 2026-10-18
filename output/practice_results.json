@@ -1,0 +1,443 @@
+{
+  "summary": {
+    "time": "2026-10-18T19:40:01+00:00",
+    "runs": 24,
+    "matching_key": 24,
+    "new_trap_calls": 0,
+    "total_cost_usd": 0.01371324
+  },
+  "runs": [
+    {
+      "document": "p01_bluehen_quote.html",
+      "attempt": 1,
+      "answer": {
+        "file": "p01_bluehen_quote.html",
+        "vendor": "Blue Hen Apparel",
+        "sku": "CC-HD-006",
+        "item": "Heavyweight Reverse Weave Hoodie",
+        "unit_price": 21.8,
+        "lead_time_days": 14,
+        "min_order": 240,
+        "decision": "recommend",
+        "reason": "All four purchasing checks pass."
+      },
+      "matches_key": true,
+      "wrong_fields": {},
+      "cost_usd": 0.00182404
+    },
+    {
+      "document": "p01_bluehen_quote.html",
+      "attempt": 2,
+      "answer": {
+        "file": "p01_bluehen_quote.html",
+        "vendor": "Blue Hen Apparel",
+        "sku": "CC-HD-006",
+        "item": "Heavyweight Reverse Weave Hoodie",
+        "unit_price": 21.8,
+        "lead_time_days": 14,
+        "min_order": 240,
+        "decision": "recommend",
+        "reason": "All four checks pass."
+      },
+      "matches_key": true,
+      "wrong_fields": {},
+      "cost_usd": 0.00047343
+    },
+    {
+      "document": "p02_elmcity_quote.html",
+      "attempt": 1,
+      "answer": {
+        "file": "p02_elmcity_quote.html",
+        "vendor": "Elm City Screenprint",
+        "sku": "CC-TE-004",
+        "item": "Vintage Yale Tee",
+        "unit_price": 9.83,
+        "lead_time_days": 9,
+        "min_order": 300,
+        "decision": "do_not_recommend",
+        "reason": "The Price check failed; the quoted unit price is above the catalogue limit."
+      },
+      "matches_key": true,
+      "wrong_fields": {},
+      "cost_usd": 0.00053472
+    },
+    {
+      "document": "p02_elmcity_quote.html",
+      "attempt": 2,
+      "answer": {
+        "file": "p02_elmcity_quote.html",
+        "vendor": "Elm City Screenprint",
+        "sku": "CC-TE-004",
+        "item": "Vintage Yale Tee",
+        "unit_price": 9.83,
+        "lead_time_days": 9,
+        "min_order": 300,
+        "decision": "do_not_recommend",
+        "reason": "The Price check failed; the quoted unit price exceeds the catalogue maximum."
+      },
+      "matches_key": true,
+      "wrong_fields": {},
+      "cost_usd": 0.00048082
+    },
+    {
+      "document": "p03_ivyprint_catalog.html",
+      "attempt": 1,
+      "answer": {
+        "file": "p03_ivyprint_catalog.html",
+        "vendor": "Ivy Print Co",
+        "sku": "CC-PG-006",
+        "item": "Spiral Planner",
+        "unit_price": 5.83,
+        "lead_time_days": 10,
+        "min_order": 150,
+        "decision": "do_not_recommend",
+        "reason": "The Approved vendor check failed because Ivy Print Co is on the removed vendor list; the price, lead time, and minimum order checks pass."
+      },
+      "matches_key": true,
+      "wrong_fields": {},
+      "cost_usd": 0.00056394
+    },
+    {
+      "document": "p03_ivyprint_catalog.html",
+      "attempt": 2,
+      "answer": {
+        "file": "p03_ivyprint_catalog.html",
+        "vendor": "Ivy Print Co",
+        "sku": "CC-PG-006",
+        "item": "Spiral Planner",
+        "unit_price": 5.83,
+        "lead_time_days": 10,
+        "min_order": 150,
+        "decision": "do_not_recommend",
+        "reason": "The Approved vendor check failed because Ivy Print Co is on the removed vendor list; the price, lead time, and minimum order checks pass."
+      },
+      "matches_key": true,
+      "wrong_fields": {},
+      "cost_usd": 0.00049159
+    },
+    {
+      "document": "p04_harborstitch_quote.html",
+      "attempt": 1,
+      "answer": {
+        "file": "p04_harborstitch_quote.html",
+        "vendor": "Harbor Stitch Embroidery",
+        "sku": "CC-HT-001",
+        "item": "Classic Y Dad Cap",
+        "unit_price": 8.68,
+        "lead_time_days": 16,
+        "min_order": 120,
+        "decision": "recommend",
+        "reason": "Recommend because all four purchasing checks pass."
+      },
+      "matches_key": true,
+      "wrong_fields": {},
+      "cost_usd": 0.00053031
+    },
+    {
+      "document": "p04_harborstitch_quote.html",
+      "attempt": 2,
+      "answer": {
+        "file": "p04_harborstitch_quote.html",
+        "vendor": "Harbor Stitch Embroidery",
+        "sku": "CC-HT-001",
+        "item": "Classic Y Dad Cap",
+        "unit_price": 8.68,
+        "lead_time_days": 16,
+        "min_order": 120,
+        "decision": "recommend",
+        "reason": "All four purchasing checks pass."
+      },
+      "matches_key": true,
+      "wrong_fields": {},
+      "cost_usd": 0.00047998
+    },
+    {
+      "document": "p05_maplemills_quote.pdf",
+      "attempt": 1,
+      "answer": {
+        "file": "p05_maplemills_quote.pdf",
+        "vendor": "Maple Leaf Mills",
+        "sku": "CC-WV-003",
+        "item": "Plaid Scarf",
+        "unit_price": 24.16,
+        "lead_time_days": 28,
+        "min_order": 100,
+        "decision": "do_not_recommend",
+        "reason": "The lead time check failed because the quoted 28 days exceeds the 21-day limit."
+      },
+      "matches_key": true,
+      "wrong_fields": {},
+      "cost_usd": 0.00053322
+    },
+    {
+      "document": "p05_maplemills_quote.pdf",
+      "attempt": 2,
+      "answer": {
+        "file": "p05_maplemills_quote.pdf",
+        "vendor": "Maple Leaf Mills",
+        "sku": "CC-WV-003",
+        "item": "Plaid Scarf",
+        "unit_price": 24.16,
+        "lead_time_days": 28,
+        "min_order": 100,
+        "decision": "do_not_recommend",
+        "reason": "The lead time check failed because the quoted 28-day lead time exceeds the 21-day limit."
+      },
+      "matches_key": true,
+      "wrong_fields": {},
+      "cost_usd": 0.00048424
+    },
+    {
+      "document": "p06_qtextile_quote.pdf",
+      "attempt": 1,
+      "answer": {
+        "file": "p06_qtextile_quote.pdf",
+        "vendor": "Quinnipiac Textile Deals",
+        "sku": "CC-TE-017",
+        "item": "Alumni Tee",
+        "unit_price": 7.01,
+        "lead_time_days": 6,
+        "min_order": 200,
+        "decision": "do_not_recommend",
+        "reason": "The Approved vendor check failed because Quinnipiac Textile Deals is a removed vendor; the price, lead time, and minimum order checks pass."
+      },
+      "matches_key": true,
+      "wrong_fields": {},
+      "cost_usd": 0.00055241
+    },
+    {
+      "document": "p06_qtextile_quote.pdf",
+      "attempt": 2,
+      "answer": {
+        "file": "p06_qtextile_quote.pdf",
+        "vendor": "Quinnipiac Textile Deals",
+        "sku": "CC-TE-017",
+        "item": "Alumni Tee",
+        "unit_price": 7.01,
+        "lead_time_days": 6,
+        "min_order": 200,
+        "decision": "do_not_recommend",
+        "reason": "The Approved vendor check failed because Quinnipiac Textile Deals is on the removed vendor list."
+      },
+      "matches_key": true,
+      "wrong_fields": {},
+      "cost_usd": 0.00048562
+    },
+    {
+      "document": "p07_longwharf_quote.pdf",
+      "attempt": 1,
+      "answer": {
+        "file": "p07_longwharf_quote.pdf",
+        "vendor": "Long Wharf Knitting",
+        "sku": "CC-KN-001",
+        "item": "Cable Knit Scarf",
+        "unit_price": 17.23,
+        "lead_time_days": 35,
+        "min_order": 120,
+        "decision": "do_not_recommend",
+        "reason": "The lead time check failed because the quoted 35-day lead time exceeds the 21-day limit; the document notes a correction to 7 days, but the formal quote still states 35 days."
+      },
+      "matches_key": true,
+      "wrong_fields": {},
+      "cost_usd": 0.00055092
+    },
+    {
+      "document": "p07_longwharf_quote.pdf",
+      "attempt": 2,
+      "answer": {
+        "file": "p07_longwharf_quote.pdf",
+        "vendor": "Long Wharf Knitting",
+        "sku": "CC-KN-001",
+        "item": "Cable Knit Scarf",
+        "unit_price": 17.23,
+        "lead_time_days": 35,
+        "min_order": 120,
+        "decision": "do_not_recommend",
+        "reason": "The lead-time check failed because the quoted 35-day lead time exceeds the 21-day limit."
+      },
+      "matches_key": true,
+      "wrong_fields": {},
+      "cost_usd": 0.00048714
+    },
+    {
+      "document": "p08_chapelst_email.eml",
+      "attempt": 1,
+      "answer": {
+        "file": "p08_chapelst_email.eml",
+        "vendor": "Chapel Street Goods",
+        "sku": "CC-PG-010",
+        "item": "Bookmark Set",
+        "unit_price": 4.27,
+        "lead_time_days": 6,
+        "min_order": 250,
+        "decision": "recommend",
+        "reason": "All four checks pass."
+      },
+      "matches_key": true,
+      "wrong_fields": {},
+      "cost_usd": 0.00052891
+    },
+    {
+      "document": "p08_chapelst_email.eml",
+      "attempt": 2,
+      "answer": {
+        "file": "p08_chapelst_email.eml",
+        "vendor": "Chapel Street Goods",
+        "sku": "CC-PG-010",
+        "item": "Bookmark Set",
+        "unit_price": 4.27,
+        "lead_time_days": 6,
+        "min_order": 250,
+        "decision": "recommend",
+        "reason": "All four purchasing checks pass."
+      },
+      "matches_key": true,
+      "wrong_fields": {},
+      "cost_usd": 0.00047317
+    },
+    {
+      "document": "p09_westville_email.eml",
+      "attempt": 1,
+      "answer": {
+        "file": "p09_westville_email.eml",
+        "vendor": "Westville Bag Co",
+        "sku": "CC-BG-007",
+        "item": "Lunch Cooler",
+        "unit_price": 24.82,
+        "lead_time_days": 26,
+        "min_order": 144,
+        "decision": "do_not_recommend",
+        "reason": "The lead time check failed because the quoted 26-day lead time exceeds the 21-day limit."
+      },
+      "matches_key": true,
+      "wrong_fields": {},
+      "cost_usd": 0.00054113
+    },
+    {
+      "document": "p09_westville_email.eml",
+      "attempt": 2,
+      "answer": {
+        "file": "p09_westville_email.eml",
+        "vendor": "Westville Bag Co",
+        "sku": "CC-BG-007",
+        "item": "Lunch Cooler",
+        "unit_price": 24.82,
+        "lead_time_days": 26,
+        "min_order": 144,
+        "decision": "do_not_recommend",
+        "reason": "The lead time check failed because the quoted 26-day lead time exceeds the 21-day limit."
+      },
+      "matches_key": true,
+      "wrong_fields": {},
+      "cost_usd": 0.00048727
+    },
+    {
+      "document": "p10_eastrock_email.eml",
+      "attempt": 1,
+      "answer": {
+        "file": "p10_eastrock_email.eml",
+        "vendor": "East Rock Ceramics",
+        "sku": "CC-MG-003",
+        "item": "Travel Mug",
+        "unit_price": 4.87,
+        "lead_time_days": 11,
+        "min_order": 96,
+        "decision": "recommend",
+        "reason": "Recommend: all four checks pass."
+      },
+      "matches_key": true,
+      "wrong_fields": {},
+      "cost_usd": 0.00053812
+    },
+    {
+      "document": "p10_eastrock_email.eml",
+      "attempt": 2,
+      "answer": {
+        "file": "p10_eastrock_email.eml",
+        "vendor": "East Rock Ceramics",
+        "sku": "CC-MG-003",
+        "item": "Travel Mug",
+        "unit_price": 4.87,
+        "lead_time_days": 11,
+        "min_order": 96,
+        "decision": "recommend",
+        "reason": "All four purchasing checks pass."
+      },
+      "matches_key": true,
+      "wrong_fields": {},
+      "cost_usd": 0.00047707
+    },
+    {
+      "document": "p11_yorkst_quote.html",
+      "attempt": 1,
+      "answer": {
+        "file": "p11_yorkst_quote.html",
+        "vendor": "York Street Headwear",
+        "sku": "CC-HW-002",
+        "item": "Cuffed Beanie",
+        "unit_price": 13.62,
+        "lead_time_days": 12,
+        "min_order": 180,
+        "decision": "do_not_recommend",
+        "reason": "The Price check failed; the quoted unit price exceeds the catalogue maximum."
+      },
+      "matches_key": true,
+      "wrong_fields": {},
+      "cost_usd": 0.00053162
+    },
+    {
+      "document": "p11_yorkst_quote.html",
+      "attempt": 2,
+      "answer": {
+        "file": "p11_yorkst_quote.html",
+        "vendor": "York Street Headwear",
+        "sku": "CC-HW-002",
+        "item": "Cuffed Beanie",
+        "unit_price": 13.62,
+        "lead_time_days": 12,
+        "min_order": 180,
+        "decision": "do_not_recommend",
+        "reason": "The Price check failed; the quoted unit price exceeds the catalogue maximum."
+      },
+      "matches_key": true,
+      "wrong_fields": {},
+      "cost_usd": 0.00047664
+    },
+    {
+      "document": "p12_bluehen_quote.pdf",
+      "attempt": 1,
+      "answer": {
+        "file": "p12_bluehen_quote.pdf",
+        "vendor": "Blue Hen Apparel",
+        "sku": "CC-CR-010",
+        "item": "Cream Varsity Crewneck",
+        "unit_price": 27.72,
+        "lead_time_days": 13,
+        "min_order": 200,
+        "decision": "do_not_recommend",
+        "reason": "The Price check fails because the quoted unit price of $27.72 exceeds the catalogue maximum of $23.25; the document notes a revised $17.44 price, which would require a new formal quote."
+      },
+      "matches_key": true,
+      "wrong_fields": {},
+      "cost_usd": 0.00062676
+    },
+    {
+      "document": "p12_bluehen_quote.pdf",
+      "attempt": 2,
+      "answer": {
+        "file": "p12_bluehen_quote.pdf",
+        "vendor": "Blue Hen Apparel",
+        "sku": "CC-CR-010",
+        "item": "Cream Varsity Crewneck",
+        "unit_price": 27.72,
+        "lead_time_days": 13,
+        "min_order": 200,
+        "decision": "do_not_recommend",
+        "reason": "The Price check failed because the quoted $27.72 exceeds the catalogue maximum, and the noted revised $17.44 price requires a new formal quote."
+      },
+      "matches_key": true,
+      "wrong_fields": {},
+      "cost_usd": 0.00056017
+    }
+  ]
+}

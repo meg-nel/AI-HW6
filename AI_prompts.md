@@ -69,3 +69,11 @@ A log of the prompts I typed to the AI assistant while building the Campus Custo
 ### Initial prompt
 
 > Next is Problem 4: With and Without Cached Tokens. The handbook is the same on every call, so the model can reuse it from a cache at a much cheaper price. Run the agent on all 12 practice documents in two ways: with cache, so the handbook gets reused from cache, and without cache, so nothing gets reused from cache. The without cache run should not show cached tokens. Save every model call from both setups to output/cache_test.json. For each call include the setup, document, every token count the API reports, and dollars from prices.json. In output/cache_test.md, include the following: total cost and cost per document for each setup and the percent saved, how the real numbers compare to Problem 2 estimate, a projection for 1,000 documents a day for 30 days with and without cache, and anything in the numbers that was surprising and why it happens
+
+### Follow-up prompts
+
+**Follow-up 1**
+
+> Yes, tighten the agent so in-document corrections can't change the quoted numbers, then re-run all 12 practice docs.
+
+*What was lacking:* The original build didn't say how to handle in-document "corrections" or "revised" prices, so the model sometimes took them over the quoted figures (p07 and p12 failed in the cache test).

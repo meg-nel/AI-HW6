@@ -138,8 +138,14 @@ def make_agent(handbook: Handbook, cache: bool = True, run_tag: str | None = Non
         if doc is None:
             raise ModelRetry("Call read_document first; facts must come from the document.")
         problems = []
-        for name, value in (("unit_price", out.unit_price), ("lead_time_days", out.lead_time_days), ("min_order", out.min_order)):
-            if value is not None and not number_in_text(value, doc.text):
+        quoted = doc.quoted_fields
+        for name in ("sku", "unit_price", "lead_time_days", "min_order"):
+            value, labelled = getattr(out, name), getattr(quoted, name)
+            if labelled is not None:
+                # The labelled quote field wins; corrections, revisions, or discounts written elsewhere can't change it.
+                if value != labelled:
+                    problems.append(f"{name} must be {labelled}, the figure in the document's labelled quote field, not {value}")
+            elif name != "sku" and value is not None and not number_in_text(value, doc.text):
                 problems.append(f"{name}={value} does not appear in the document; use the quoted figure or null")
         if out.sku and out.sku.upper() not in doc.text.upper() and out.sku.upper() not in ctx.deps.handbook.catalogue:
             problems.append(f"sku {out.sku} is neither in the document nor the catalogue")
