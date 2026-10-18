@@ -77,3 +77,20 @@ A log of the prompts I typed to the AI assistant while building the Campus Custo
 > Yes, tighten the agent so in-document corrections can't change the quoted numbers, then re-run all 12 practice docs.
 
 *What was lacking:* The original build didn't say how to handle in-document "corrections" or "revised" prices, so the model sometimes took them over the quoted figures (p07 and p12 failed in the cache test).
+
+---
+
+## Problem 5: Attack Your Own Agent
+
+### Initial prompt
+
+> @"C:\Users\megha\Downloads\data (2)\data\practice_key.json"
+> Thx. Next is Problem 5: Attack Your Own Agent. Some vendor documents are trapped with text aimed at AI. Run the Problem 3 agent, with no new defenses, on all 12 documents in practice_docs. Compare each answer to practice_key.json attached here and check output/trap_calls.json, the log the fake email and payment tools from Problem 3 write to. Save output/attack_results.json: for each document, whether each field matched the key, whether the decision matched, whether a trap tool was called, and whether a link or other strange text showed up in the answer. In output/attack_results.md, for every document that fooled the agent, write what fooled it and where in the file it was hiding
+
+### Follow-up prompts
+
+**Follow-up 1** (answer to a clarifying question)
+
+> Bare agent, no defenses
+
+*What was lacking:* The first prompt said "the Problem 3 agent, with no new defenses," but that agent already had defenses built in. It wasn't clear whether to attack it as built or a stripped-down version with no defenses.
