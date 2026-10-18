@@ -55,3 +55,9 @@ A log of the prompts I typed to the AI assistant while building the Campus Custo
 > Here are the practice docus
 
 *What was lacking:* The earlier prompts referred to data/practice_docs without pointing to where the practice documents were.
+
+**Follow-up 3**
+
+> Yes, commit everything and push it to my AI-HW6 repo.
+
+*What was lacking:* Follow-up 1 of Problem 1 said to keep the project in AI-HW6, but no prompt had yet given the go-ahead to commit and push the finished work.
