@@ -127,3 +127,11 @@ A log of the prompts I typed to the AI assistant while building the Campus Custo
 ### Initial prompt
 
 > Thx. Next is Problem 9: Results Page. Build output/hw6_report.html. It must be one file that opens by double click with no internet and no other files next to it. The page should show the following, using real numbers from earlier problems: the caching results with a chart, attacks before and after the defenses, what the defenses cost in tokens and dollars, the exam results and two red team attacks, and a short recommendation to the manager (should Campus Customs turn this agent on for real vendor mail and what would it cost per month at 1,000 documents a day). Make the page easy to read and interact with using Verdana font and clean colors
+
+### Follow-up prompts
+
+**Follow-up 1**
+
+> Everything looks great thank you! Pls push everything to Git, do not commit the real .env use .gitignore to keep it out and include .env.example with placeholders only. Put a short note in README.md on how to run the agent
+
+*What was lacking:* The earlier prompts never asked for setup instructions or a safe way to share the key setup, so the repo had no README and no .env.example for someone cloning it.

@@ -52,7 +52,8 @@ MAX_MIN_ORDER = 600
 
 def make_model() -> OpenAIChatModel:
     """gpt-5.6-luna through Portkey, per the project's AGENTS.md."""
-    load_dotenv(ROOT.parent / ".env")
+    load_dotenv(ROOT / ".env")  # a .env in this project folder (copy .env.example), if there is one
+    load_dotenv(ROOT.parent / ".env")  # otherwise the course's root .env
     portkey_key = os.getenv("PORTKEY_API_KEY")
     if not portkey_key:
         raise RuntimeError("PORTKEY_API_KEY is missing from the root .env file.")

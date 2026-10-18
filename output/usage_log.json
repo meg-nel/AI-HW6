@@ -3794,5 +3794,22 @@
     "output_tokens": 140,
     "cost_usd": 0.00035471,
     "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:23:36+00:00",
+    "document": "data/practice_docs/p08_chapelst_email.eml",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22830,
+    "cache_read_tokens": 22285,
+    "cache_write_tokens": 301,
+    "output_tokens": 126,
+    "cost_usd": 0.00034787,
+    "priced_as": "gpt-6-luna"
   }
 ]
