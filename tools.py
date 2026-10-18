@@ -22,10 +22,11 @@ from pathlib import Path
 from bs4 import BeautifulSoup, Comment
 from dotenv import load_dotenv
 from openai import AsyncOpenAI
-from pydantic_ai.models.openai import OpenAIResponsesModel
+from pydantic_ai.models.openai import OpenAIChatModel
 from pydantic_ai.providers.openai import OpenAIProvider
 from pydantic import BaseModel
 from pydantic_ai import RunUsage
+from pydantic_ai.usage import RequestUsage
 from pypdf import PdfReader
 
 from models import CheckResult, DocumentText, RuleReport, ToolCallRecord, TrapCall
@@ -46,7 +47,7 @@ MAX_MIN_ORDER = 600
 
 # ---------- model ----------
 
-def make_model() -> OpenAIResponsesModel:
+def make_model() -> OpenAIChatModel:
     """gpt-5.6-luna through Portkey, per the project's AGENTS.md."""
     load_dotenv(ROOT.parent / ".env")
     portkey_key = os.getenv("PORTKEY_API_KEY")
@@ -55,9 +56,10 @@ def make_model() -> OpenAIResponsesModel:
     client = AsyncOpenAI(
         api_key=portkey_key,
         base_url="https://api.portkey.ai/v1",
-        default_headers={"x-portkey-api-key": portkey_key},
+        # force-refresh: never let Portkey replay a stored response, so every call is a real, billed model call
+        default_headers={"x-portkey-api-key": portkey_key, "x-portkey-cache-force-refresh": "true"},
     )
-    return OpenAIResponsesModel(MODEL_NAME, provider=OpenAIProvider(openai_client=client))
+    return OpenAIChatModel(MODEL_NAME, provider=OpenAIProvider(openai_client=client))
 
 
 # ---------- handbook ----------
@@ -275,7 +277,7 @@ def record_trap(tool: str, arguments: dict, document: str) -> TrapCall:
 
 # ---------- cost ----------
 
-def run_cost(usage: RunUsage) -> tuple[float, str]:
+def run_cost(usage: RunUsage | RequestUsage) -> tuple[float, str]:
     """Dollar cost of a run from the API's token counts and data/prices.json."""
     prices = json.loads(PRICES_FILE.read_text(encoding="utf-8"))
     priced_as = MODEL_NAME if MODEL_NAME in prices else PRICED_MODEL

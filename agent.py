@@ -2,6 +2,7 @@
 
 Usage:
     python agent.py --doc data/practice_docs/p01_bluehen_quote.html
+    python agent.py --doc data/practice_docs/p01_bluehen_quote.html --no-cache
 
 Reads one vendor document (HTML, PDF, or .eml email) and returns vendor, SKU, unit price, lead time
 in days, minimum order, a decision (recommend or do_not_recommend) under the handbook's purchasing
@@ -24,6 +25,8 @@ from pathlib import Path
 os.environ.setdefault("PYDANTIC_AI_NO_BANNER", "1")
 
 from pydantic_ai import Agent, ModelRetry, RunContext, UsageLimits
+from pydantic_ai.agent import AgentRunResult
+from pydantic_ai.settings import ModelSettings
 
 from models import AuditEntry, DocumentText, RuleReport, ToolCallRecord, UsageEntry, VendorDecision
 from tools import (
@@ -45,6 +48,11 @@ from tools import (
 )
 
 PROMPT_FILE = ROOT / "prompts" / "prompt.md"
+# With cache: cache the stable prefix (tool definitions + prompt.md + handbook) and the growing conversation.
+# Without cache: explicit mode with no breakpoints, which per OpenAI "does not use prompt caching or create
+# cache writes". Portkey drops this option on the Responses API, so the agent uses Chat Completions.
+CACHE_ON: ModelSettings = {"cache": True}
+CACHE_OFF: ModelSettings = {"openai_prompt_cache_options": {"mode": "explicit"}}
 URL = re.compile(r"https?://|www\.|\S+@\S+\.\w+", re.I)
 
 
@@ -65,12 +73,17 @@ def audit(ctx: RunContext[VendorDeps], tool: str, arguments: dict, result: str) 
     ctx.deps.audit.append(ToolCallRecord(tool=tool, arguments=arguments, result=result))
 
 
-def make_agent(handbook: Handbook) -> Agent[VendorDeps, VendorDecision]:
+def make_agent(handbook: Handbook, cache: bool = True, run_tag: str | None = None) -> Agent[VendorDeps, VendorDecision]:
+    """run_tag, if given, goes at the very start of the instructions so a test starts from a cold cache."""
+    instructions = build_instructions(handbook)
+    if run_tag:
+        instructions = f"Run tag: {run_tag}\n\n{instructions}"
     agent = Agent(
         make_model(),
         deps_type=VendorDeps,
         output_type=VendorDecision,
-        instructions=build_instructions(handbook),
+        instructions=instructions,
+        model_settings=CACHE_ON if cache else CACHE_OFF,
         retries=3,
     )
 
@@ -149,13 +162,15 @@ def make_agent(handbook: Handbook) -> Agent[VendorDeps, VendorDecision]:
     return agent
 
 
-def run_doc(path: Path) -> VendorDecision:
+def run_doc(
+    path: Path, cache: bool = True, run_tag: str | None = None
+) -> tuple[VendorDecision, AgentRunResult[VendorDecision]]:
     """Review one document, then append to the usage log and audit trail (even if the run fails)."""
     handbook = Handbook.load()
-    agent = make_agent(handbook)
+    agent = make_agent(handbook, cache, run_tag)
     deps = VendorDeps(doc_path=path.resolve(), handbook=handbook)
     document = str(path).replace("\\", "/")
-    answer, error, usage = None, None, None
+    answer, error, usage, result = None, None, None, None
     try:
         result = agent.run_sync(
             f"Review this vendor document and return your recommendation: {deps.doc_path}",
@@ -177,12 +192,13 @@ def run_doc(path: Path) -> VendorDecision:
                 cache_write_tokens=usage.cache_write_tokens, output_tokens=usage.output_tokens,
                 cost_usd=cost, priced_as=priced_as,
             ))
-    return answer
+    return answer, result
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Campus Customs vendor desk agent")
     parser.add_argument("--doc", required=True, help="path to one vendor document (.html, .pdf, or .eml)")
+    parser.add_argument("--no-cache", action="store_true", help="turn off prompt caching for this run")
     args = parser.parse_args()
 
     path = Path(args.doc)
@@ -190,7 +206,8 @@ def main() -> None:
         raise SystemExit(f"Not found: {path}")
     for log in (TRAP_CALLS, USAGE_LOG, AUDIT_TRAIL):
         ensure_list_file(log)
-    print(json.dumps(run_doc(path).model_dump(), indent=2))
+    answer, _ = run_doc(path, cache=not args.no_cache)
+    print(json.dumps(answer.model_dump(), indent=2))
 
 
 if __name__ == "__main__":
