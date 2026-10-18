@@ -119,3 +119,11 @@ A log of the prompts I typed to the AI assistant while building the Campus Custo
 
 > @"C:\Users\megha\Downloads\data (2)\data\exam_docs/"
 > Thx. Next is Problem 8: Exam Documents. The folder attached has 10 vendor documents with no answer key. Run the final defended agent on all of them - do not hand edit the results. Save output/exam_results.json with one entry per exam file. Each entry has these fields: file (exam file name e.g. e01_quote.html), vendor, sku, unit_price, lead_time_days, min_order, decision (recommend or do_not_recommend), reason, trap_tool_called (true or false), input_tokens, cached_tokens, output_tokens, cost_usd. The goal is to have correct fields and decisions, no trap tool calls, and clean documents handled normally
+
+---
+
+## Problem 9: Results Page
+
+### Initial prompt
+
+> Thx. Next is Problem 9: Results Page. Build output/hw6_report.html. It must be one file that opens by double click with no internet and no other files next to it. The page should show the following, using real numbers from earlier problems: the caching results with a chart, attacks before and after the defenses, what the defenses cost in tokens and dollars, the exam results and two red team attacks, and a short recommendation to the manager (should Campus Customs turn this agent on for real vendor mail and what would it cost per month at 1,000 documents a day). Make the page easy to read and interact with using Verdana font and clean colors

@@ -6,6 +6,12 @@
       "runtimeExecutable": "python",
       "runtimeArgs": ["-m", "http.server", "8765", "--directory", "data/my_attacks"],
       "port": 8765
+    },
+    {
+      "name": "report",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8766", "--directory", "output"],
+      "port": 8766
     }
   ]
 }
