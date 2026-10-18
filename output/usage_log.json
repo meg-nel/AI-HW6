@@ -598,5 +598,3201 @@
     "output_tokens": 355,
     "cost_usd": 0.00056017,
     "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:51:09+00:00",
+    "document": "data/practice_docs/p12_bluehen_quote.pdf",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22792,
+    "cache_read_tokens": 11160,
+    "cache_write_tokens": 11388,
+    "output_tokens": 154,
+    "cost_usd": 0.0016365,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:51:17+00:00",
+    "document": "data/practice_docs/p12_bluehen_quote.pdf",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21417,
+    "cache_read_tokens": 10504,
+    "cache_write_tokens": 10669,
+    "output_tokens": 206,
+    "cost_usd": 0.00156606,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:51:24+00:00",
+    "document": "data/practice_docs/p12_bluehen_quote.pdf",
+    "defenses": [
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21283,
+    "cache_read_tokens": 10437,
+    "cache_write_tokens": 10602,
+    "output_tokens": 140,
+    "cost_usd": 0.00152402,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:52:30+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p01_bluehen_quote.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22837,
+    "cache_read_tokens": 11171,
+    "cache_write_tokens": 11422,
+    "output_tokens": 116,
+    "cost_usd": 0.00162186,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:52:33+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p02_elmcity_quote.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22834,
+    "cache_read_tokens": 22306,
+    "cache_write_tokens": 284,
+    "output_tokens": 113,
+    "cost_usd": 0.00033946,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:52:36+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p03_ivyprint_catalog.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22827,
+    "cache_read_tokens": 22306,
+    "cache_write_tokens": 277,
+    "output_tokens": 126,
+    "cost_usd": 0.00034509,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:52:39+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p04_harborstitch_quote.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22855,
+    "cache_read_tokens": 22308,
+    "cache_write_tokens": 303,
+    "output_tokens": 122,
+    "cost_usd": 0.00034636,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:52:43+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p05_maplemills_quote.pdf",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22825,
+    "cache_read_tokens": 22306,
+    "cache_write_tokens": 275,
+    "output_tokens": 117,
+    "cost_usd": 0.00034034,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:52:47+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p06_qtextile_quote.pdf",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22823,
+    "cache_read_tokens": 22306,
+    "cache_write_tokens": 273,
+    "output_tokens": 119,
+    "cost_usd": 0.00034109,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:52:51+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p07_longwharf_quote.pdf",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22832,
+    "cache_read_tokens": 22306,
+    "cache_write_tokens": 282,
+    "output_tokens": 116,
+    "cost_usd": 0.00034071,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:52:54+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p08_chapelst_email.eml",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22854,
+    "cache_read_tokens": 22307,
+    "cache_write_tokens": 303,
+    "output_tokens": 120,
+    "cost_usd": 0.00034535,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:52:57+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p09_westville_email.eml",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22864,
+    "cache_read_tokens": 22307,
+    "cache_write_tokens": 313,
+    "output_tokens": 138,
+    "cost_usd": 0.0003556,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:53:01+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p10_eastrock_email.eml",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22889,
+    "cache_read_tokens": 22307,
+    "cache_write_tokens": 338,
+    "output_tokens": 116,
+    "cost_usd": 0.00034772,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:53:05+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p11_yorkst_quote.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22810,
+    "cache_read_tokens": 22306,
+    "cache_write_tokens": 260,
+    "output_tokens": 135,
+    "cost_usd": 0.00034746,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:53:08+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p12_bluehen_quote.pdf",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22814,
+    "cache_read_tokens": 22305,
+    "cache_write_tokens": 265,
+    "output_tokens": 117,
+    "cost_usd": 0.00033908,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:53:14+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v01_elmcity_visible_price_cut.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22878,
+    "cache_read_tokens": 22309,
+    "cache_write_tokens": 325,
+    "output_tokens": 114,
+    "cost_usd": 0.00034512,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:53:17+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v02_ivyprint_visible_vendor_swap.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22872,
+    "cache_read_tokens": 22309,
+    "cache_write_tokens": 319,
+    "output_tokens": 150,
+    "cost_usd": 0.00036237,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:53:20+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v03_harborstitch_visible_tool_request.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22936,
+    "cache_read_tokens": 22311,
+    "cache_write_tokens": 381,
+    "output_tokens": 144,
+    "cost_usd": 0.00036713,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:53:24+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v04_westville_visible_correction.eml",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22938,
+    "cache_read_tokens": 22310,
+    "cache_write_tokens": 384,
+    "output_tokens": 133,
+    "cost_usd": 0.000362,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:53:39+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p01_bluehen_quote.html",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21443,
+    "cache_read_tokens": 10515,
+    "cache_write_tokens": 10684,
+    "output_tokens": 200,
+    "cost_usd": 0.00156505,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:53:43+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p02_elmcity_quote.html",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21452,
+    "cache_read_tokens": 20994,
+    "cache_write_tokens": 214,
+    "output_tokens": 200,
+    "cost_usd": 0.00036109,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:53:46+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p03_ivyprint_catalog.html",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21445,
+    "cache_read_tokens": 20994,
+    "cache_write_tokens": 207,
+    "output_tokens": 215,
+    "cost_usd": 0.00036772,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:53:50+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p04_harborstitch_quote.html",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21441,
+    "cache_read_tokens": 20996,
+    "cache_write_tokens": 201,
+    "output_tokens": 228,
+    "cost_usd": 0.00037349,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:53:53+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p05_maplemills_quote.pdf",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21422,
+    "cache_read_tokens": 20994,
+    "cache_write_tokens": 184,
+    "output_tokens": 186,
+    "cost_usd": 0.00035034,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:53:57+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p06_qtextile_quote.pdf",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21466,
+    "cache_read_tokens": 20994,
+    "cache_write_tokens": 228,
+    "output_tokens": 201,
+    "cost_usd": 0.00036334,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:54:00+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p07_longwharf_quote.pdf",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21441,
+    "cache_read_tokens": 20994,
+    "cache_write_tokens": 203,
+    "output_tokens": 222,
+    "cost_usd": 0.00037072,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:54:04+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p08_chapelst_email.eml",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21448,
+    "cache_read_tokens": 20956,
+    "cache_write_tokens": 248,
+    "output_tokens": 230,
+    "cost_usd": 0.00037996,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:54:09+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p09_westville_email.eml",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21578,
+    "cache_read_tokens": 20995,
+    "cache_write_tokens": 339,
+    "output_tokens": 267,
+    "cost_usd": 0.00041023,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:54:13+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p10_eastrock_email.eml",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21467,
+    "cache_read_tokens": 20995,
+    "cache_write_tokens": 228,
+    "output_tokens": 209,
+    "cost_usd": 0.00036735,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:54:16+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p11_yorkst_quote.html",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21413,
+    "cache_read_tokens": 20994,
+    "cache_write_tokens": 175,
+    "output_tokens": 184,
+    "cost_usd": 0.00034822,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:54:20+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p12_bluehen_quote.pdf",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21439,
+    "cache_read_tokens": 20993,
+    "cache_write_tokens": 202,
+    "output_tokens": 238,
+    "cost_usd": 0.00037858,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:54:24+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v01_elmcity_visible_price_cut.html",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21462,
+    "cache_read_tokens": 20997,
+    "cache_write_tokens": 221,
+    "output_tokens": 256,
+    "cost_usd": 0.00039,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:54:27+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v02_ivyprint_visible_vendor_swap.html",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21455,
+    "cache_read_tokens": 20997,
+    "cache_write_tokens": 214,
+    "output_tokens": 200,
+    "cost_usd": 0.00036112,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:54:30+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v03_harborstitch_visible_tool_request.html",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21512,
+    "cache_read_tokens": 20999,
+    "cache_write_tokens": 269,
+    "output_tokens": 221,
+    "cost_usd": 0.00037852,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:54:34+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v04_westville_visible_correction.eml",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21512,
+    "cache_read_tokens": 20998,
+    "cache_write_tokens": 270,
+    "output_tokens": 260,
+    "cost_usd": 0.00039813,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:54:38+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p01_bluehen_quote.html",
+    "defenses": [
+      "code"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21541,
+    "cache_read_tokens": 10522,
+    "cache_write_tokens": 10775,
+    "output_tokens": 202,
+    "cost_usd": 0.00157749,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:54:42+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p02_elmcity_quote.html",
+    "defenses": [
+      "code"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21536,
+    "cache_read_tokens": 10485,
+    "cache_write_tokens": 10807,
+    "output_tokens": 186,
+    "cost_usd": 0.00157313,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:54:46+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p03_ivyprint_catalog.html",
+    "defenses": [
+      "code"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21533,
+    "cache_read_tokens": 21008,
+    "cache_write_tokens": 281,
+    "output_tokens": 203,
+    "cost_usd": 0.0003711,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:54:50+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p04_harborstitch_quote.html",
+    "defenses": [
+      "code"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21555,
+    "cache_read_tokens": 21010,
+    "cache_write_tokens": 301,
+    "output_tokens": 221,
+    "cost_usd": 0.00038262,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:54:53+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p05_maplemills_quote.pdf",
+    "defenses": [
+      "code"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21525,
+    "cache_read_tokens": 20970,
+    "cache_write_tokens": 311,
+    "output_tokens": 189,
+    "cost_usd": 0.00036748,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:54:57+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p06_qtextile_quote.pdf",
+    "defenses": [
+      "code"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21525,
+    "cache_read_tokens": 21008,
+    "cache_write_tokens": 273,
+    "output_tokens": 197,
+    "cost_usd": 0.00036711,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:55:01+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p07_longwharf_quote.pdf",
+    "defenses": [
+      "code"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21536,
+    "cache_read_tokens": 21008,
+    "cache_write_tokens": 284,
+    "output_tokens": 173,
+    "cost_usd": 0.00035648,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:55:05+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p08_chapelst_email.eml",
+    "defenses": [
+      "code"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21558,
+    "cache_read_tokens": 21009,
+    "cache_write_tokens": 305,
+    "output_tokens": 205,
+    "cost_usd": 0.00037512,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:55:08+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p09_westville_email.eml",
+    "defenses": [
+      "code"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21564,
+    "cache_read_tokens": 21009,
+    "cache_write_tokens": 311,
+    "output_tokens": 190,
+    "cost_usd": 0.00036837,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:55:14+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p10_eastrock_email.eml",
+    "defenses": [
+      "code"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21587,
+    "cache_read_tokens": 21009,
+    "cache_write_tokens": 334,
+    "output_tokens": 215,
+    "cost_usd": 0.00038374,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:55:18+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p11_yorkst_quote.html",
+    "defenses": [
+      "code"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21512,
+    "cache_read_tokens": 21008,
+    "cache_write_tokens": 260,
+    "output_tokens": 199,
+    "cost_usd": 0.00036648,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:55:21+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p12_bluehen_quote.pdf",
+    "defenses": [
+      "code"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21516,
+    "cache_read_tokens": 21007,
+    "cache_write_tokens": 265,
+    "output_tokens": 188,
+    "cost_usd": 0.0003616,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:55:25+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v01_elmcity_visible_price_cut.html",
+    "defenses": [
+      "code"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21580,
+    "cache_read_tokens": 21011,
+    "cache_write_tokens": 325,
+    "output_tokens": 289,
+    "cost_usd": 0.00041964,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:55:29+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v02_ivyprint_visible_vendor_swap.html",
+    "defenses": [
+      "code"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21576,
+    "cache_read_tokens": 21011,
+    "cache_write_tokens": 321,
+    "output_tokens": 201,
+    "cost_usd": 0.00037513,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:55:32+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v03_harborstitch_visible_tool_request.html",
+    "defenses": [
+      "code"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21640,
+    "cache_read_tokens": 21013,
+    "cache_write_tokens": 383,
+    "output_tokens": 226,
+    "cost_usd": 0.0003954,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:55:36+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v04_westville_visible_correction.eml",
+    "defenses": [
+      "code"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21644,
+    "cache_read_tokens": 21012,
+    "cache_write_tokens": 388,
+    "output_tokens": 240,
+    "cost_usd": 0.00040302,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:55:40+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p01_bluehen_quote.html",
+    "defenses": [
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21309,
+    "cache_read_tokens": 10448,
+    "cache_write_tokens": 10617,
+    "output_tokens": 142,
+    "cost_usd": 0.00152701,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:55:44+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p02_elmcity_quote.html",
+    "defenses": [
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21318,
+    "cache_read_tokens": 20860,
+    "cache_write_tokens": 214,
+    "output_tokens": 138,
+    "cost_usd": 0.00032875,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:55:47+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p03_ivyprint_catalog.html",
+    "defenses": [
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21311,
+    "cache_read_tokens": 20860,
+    "cache_write_tokens": 207,
+    "output_tokens": 178,
+    "cost_usd": 0.00034787,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:55:50+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p04_harborstitch_quote.html",
+    "defenses": [
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21307,
+    "cache_read_tokens": 20862,
+    "cache_write_tokens": 201,
+    "output_tokens": 133,
+    "cost_usd": 0.00032464,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:55:53+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p05_maplemills_quote.pdf",
+    "defenses": [
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21288,
+    "cache_read_tokens": 20860,
+    "cache_write_tokens": 184,
+    "output_tokens": 149,
+    "cost_usd": 0.0003305,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:55:57+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p06_qtextile_quote.pdf",
+    "defenses": [
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21332,
+    "cache_read_tokens": 20860,
+    "cache_write_tokens": 228,
+    "output_tokens": 143,
+    "cost_usd": 0.000333,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:56:03+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p07_longwharf_quote.pdf",
+    "defenses": [
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21307,
+    "cache_read_tokens": 20860,
+    "cache_write_tokens": 203,
+    "output_tokens": 126,
+    "cost_usd": 0.00032137,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:56:06+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p08_chapelst_email.eml",
+    "defenses": [
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21314,
+    "cache_read_tokens": 20861,
+    "cache_write_tokens": 209,
+    "output_tokens": 131,
+    "cost_usd": 0.00032463,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:56:09+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p09_westville_email.eml",
+    "defenses": [
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21444,
+    "cache_read_tokens": 20861,
+    "cache_write_tokens": 339,
+    "output_tokens": 159,
+    "cost_usd": 0.00035488,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:56:12+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p10_eastrock_email.eml",
+    "defenses": [
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21333,
+    "cache_read_tokens": 20861,
+    "cache_write_tokens": 228,
+    "output_tokens": 138,
+    "cost_usd": 0.00033051,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:56:16+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p11_yorkst_quote.html",
+    "defenses": [
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21279,
+    "cache_read_tokens": 20860,
+    "cache_write_tokens": 175,
+    "output_tokens": 149,
+    "cost_usd": 0.00032938,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:56:19+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p12_bluehen_quote.pdf",
+    "defenses": [
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21305,
+    "cache_read_tokens": 20859,
+    "cache_write_tokens": 202,
+    "output_tokens": 140,
+    "cost_usd": 0.00032824,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:56:22+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v01_elmcity_visible_price_cut.html",
+    "defenses": [
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21328,
+    "cache_read_tokens": 20863,
+    "cache_write_tokens": 221,
+    "output_tokens": 151,
+    "cost_usd": 0.00033615,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:56:25+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v02_ivyprint_visible_vendor_swap.html",
+    "defenses": [
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21321,
+    "cache_read_tokens": 20863,
+    "cache_write_tokens": 214,
+    "output_tokens": 178,
+    "cost_usd": 0.00034878,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:56:29+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v03_harborstitch_visible_tool_request.html",
+    "defenses": [
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21378,
+    "cache_read_tokens": 20865,
+    "cache_write_tokens": 269,
+    "output_tokens": 167,
+    "cost_usd": 0.00035017,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:56:32+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v04_westville_visible_correction.eml",
+    "defenses": [
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21378,
+    "cache_read_tokens": 20864,
+    "cache_write_tokens": 270,
+    "output_tokens": 156,
+    "cost_usd": 0.00034479,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:56:36+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p01_bluehen_quote.html",
+    "defenses": [
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22883,
+    "cache_read_tokens": 11235,
+    "cache_write_tokens": 11404,
+    "output_tokens": 211,
+    "cost_usd": 0.00166775,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:56:41+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p02_elmcity_quote.html",
+    "defenses": [
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22892,
+    "cache_read_tokens": 22434,
+    "cache_write_tokens": 214,
+    "output_tokens": 188,
+    "cost_usd": 0.00036949,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:56:44+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p03_ivyprint_catalog.html",
+    "defenses": [
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22885,
+    "cache_read_tokens": 22434,
+    "cache_write_tokens": 207,
+    "output_tokens": 181,
+    "cost_usd": 0.00036512,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:56:53+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p04_harborstitch_quote.html",
+    "defenses": [
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22881,
+    "cache_read_tokens": 22436,
+    "cache_write_tokens": 201,
+    "output_tokens": 197,
+    "cost_usd": 0.00037238,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:56:57+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p05_maplemills_quote.pdf",
+    "defenses": [
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22862,
+    "cache_read_tokens": 22434,
+    "cache_write_tokens": 184,
+    "output_tokens": 192,
+    "cost_usd": 0.00036774,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:57:01+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p06_qtextile_quote.pdf",
+    "defenses": [
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22906,
+    "cache_read_tokens": 22434,
+    "cache_write_tokens": 228,
+    "output_tokens": 180,
+    "cost_usd": 0.00036724,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:57:05+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p07_longwharf_quote.pdf",
+    "defenses": [
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22881,
+    "cache_read_tokens": 22434,
+    "cache_write_tokens": 203,
+    "output_tokens": 185,
+    "cost_usd": 0.00036661,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:57:09+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p08_chapelst_email.eml",
+    "defenses": [
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22888,
+    "cache_read_tokens": 22435,
+    "cache_write_tokens": 209,
+    "output_tokens": 230,
+    "cost_usd": 0.00038987,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:57:12+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p09_westville_email.eml",
+    "defenses": [
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 23018,
+    "cache_read_tokens": 22435,
+    "cache_write_tokens": 339,
+    "output_tokens": 219,
+    "cost_usd": 0.00040062,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:57:16+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p10_eastrock_email.eml",
+    "defenses": [
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22907,
+    "cache_read_tokens": 22435,
+    "cache_write_tokens": 228,
+    "output_tokens": 204,
+    "cost_usd": 0.00037925,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:57:20+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p11_yorkst_quote.html",
+    "defenses": [
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22853,
+    "cache_read_tokens": 22434,
+    "cache_write_tokens": 175,
+    "output_tokens": 186,
+    "cost_usd": 0.00036362,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:57:24+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p12_bluehen_quote.pdf",
+    "defenses": [
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22879,
+    "cache_read_tokens": 22433,
+    "cache_write_tokens": 202,
+    "output_tokens": 193,
+    "cost_usd": 0.00037048,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:57:29+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v01_elmcity_visible_price_cut.html",
+    "defenses": [
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22902,
+    "cache_read_tokens": 22437,
+    "cache_write_tokens": 221,
+    "output_tokens": 217,
+    "cost_usd": 0.0003849,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:57:33+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v02_ivyprint_visible_vendor_swap.html",
+    "defenses": [
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22895,
+    "cache_read_tokens": 22437,
+    "cache_write_tokens": 214,
+    "output_tokens": 202,
+    "cost_usd": 0.00037652,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:57:37+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v03_harborstitch_visible_tool_request.html",
+    "defenses": [
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22952,
+    "cache_read_tokens": 22439,
+    "cache_write_tokens": 269,
+    "output_tokens": 183,
+    "cost_usd": 0.00037392,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:57:41+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v04_westville_visible_correction.eml",
+    "defenses": [
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22952,
+    "cache_read_tokens": 22396,
+    "cache_write_tokens": 312,
+    "output_tokens": 210,
+    "cost_usd": 0.00039236,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:57:45+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p01_bluehen_quote.html",
+    "defenses": [
+      "code",
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21403,
+    "cache_read_tokens": 10455,
+    "cache_write_tokens": 10704,
+    "output_tokens": 117,
+    "cost_usd": 0.00152545,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:57:49+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p02_elmcity_quote.html",
+    "defenses": [
+      "code",
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21404,
+    "cache_read_tokens": 20874,
+    "cache_write_tokens": 286,
+    "output_tokens": 127,
+    "cost_usd": 0.00033239,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:57:52+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p03_ivyprint_catalog.html",
+    "defenses": [
+      "code",
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21401,
+    "cache_read_tokens": 20874,
+    "cache_write_tokens": 283,
+    "output_tokens": 123,
+    "cost_usd": 0.00033001,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:57:56+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p04_harborstitch_quote.html",
+    "defenses": [
+      "code",
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21419,
+    "cache_read_tokens": 20876,
+    "cache_write_tokens": 299,
+    "output_tokens": 139,
+    "cost_usd": 0.00034003,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:58:00+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p05_maplemills_quote.pdf",
+    "defenses": [
+      "code",
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21385,
+    "cache_read_tokens": 20874,
+    "cache_write_tokens": 267,
+    "output_tokens": 131,
+    "cost_usd": 0.00033202,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:58:03+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p06_qtextile_quote.pdf",
+    "defenses": [
+      "code",
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21391,
+    "cache_read_tokens": 20874,
+    "cache_write_tokens": 273,
+    "output_tokens": 123,
+    "cost_usd": 0.00032876,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:58:06+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p07_longwharf_quote.pdf",
+    "defenses": [
+      "code",
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21396,
+    "cache_read_tokens": 20874,
+    "cache_write_tokens": 278,
+    "output_tokens": 120,
+    "cost_usd": 0.00032789,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:58:09+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p08_chapelst_email.eml",
+    "defenses": [
+      "code",
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21418,
+    "cache_read_tokens": 20875,
+    "cache_write_tokens": 299,
+    "output_tokens": 120,
+    "cost_usd": 0.00033052,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:58:12+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p09_westville_email.eml",
+    "defenses": [
+      "code",
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21430,
+    "cache_read_tokens": 20875,
+    "cache_write_tokens": 311,
+    "output_tokens": 145,
+    "cost_usd": 0.00034452,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:58:16+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p10_eastrock_email.eml",
+    "defenses": [
+      "code",
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21457,
+    "cache_read_tokens": 20875,
+    "cache_write_tokens": 338,
+    "output_tokens": 126,
+    "cost_usd": 0.0003384,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:58:19+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p11_yorkst_quote.html",
+    "defenses": [
+      "code",
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21378,
+    "cache_read_tokens": 20874,
+    "cache_write_tokens": 260,
+    "output_tokens": 122,
+    "cost_usd": 0.00032664,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:58:22+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p12_bluehen_quote.pdf",
+    "defenses": [
+      "code",
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21382,
+    "cache_read_tokens": 20873,
+    "cache_write_tokens": 265,
+    "output_tokens": 114,
+    "cost_usd": 0.00032325,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:58:26+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v01_elmcity_visible_price_cut.html",
+    "defenses": [
+      "code",
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21444,
+    "cache_read_tokens": 20877,
+    "cache_write_tokens": 323,
+    "output_tokens": 157,
+    "cost_usd": 0.00035204,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:58:29+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v02_ivyprint_visible_vendor_swap.html",
+    "defenses": [
+      "code",
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21436,
+    "cache_read_tokens": 20877,
+    "cache_write_tokens": 315,
+    "output_tokens": 128,
+    "cost_usd": 0.00033654,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:58:33+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v03_harborstitch_visible_tool_request.html",
+    "defenses": [
+      "code",
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21504,
+    "cache_read_tokens": 20879,
+    "cache_write_tokens": 381,
+    "output_tokens": 145,
+    "cost_usd": 0.00035331,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:58:36+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v04_westville_visible_correction.eml",
+    "defenses": [
+      "code",
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21508,
+    "cache_read_tokens": 20878,
+    "cache_write_tokens": 386,
+    "output_tokens": 153,
+    "cost_usd": 0.00035793,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:58:40+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p01_bluehen_quote.html",
+    "defenses": [
+      "code",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22977,
+    "cache_read_tokens": 11240,
+    "cache_write_tokens": 11493,
+    "output_tokens": 215,
+    "cost_usd": 0.00168092,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:58:44+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p02_elmcity_quote.html",
+    "defenses": [
+      "code",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22972,
+    "cache_read_tokens": 22444,
+    "cache_write_tokens": 284,
+    "output_tokens": 201,
+    "cost_usd": 0.00038484,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:58:48+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p03_ivyprint_catalog.html",
+    "defenses": [
+      "code",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22967,
+    "cache_read_tokens": 22444,
+    "cache_write_tokens": 279,
+    "output_tokens": 209,
+    "cost_usd": 0.00038822,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:58:51+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p04_harborstitch_quote.html",
+    "defenses": [
+      "code",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22991,
+    "cache_read_tokens": 22446,
+    "cache_write_tokens": 301,
+    "output_tokens": 200,
+    "cost_usd": 0.00038648,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:58:55+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p05_maplemills_quote.pdf",
+    "defenses": [
+      "code",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22959,
+    "cache_read_tokens": 22444,
+    "cache_write_tokens": 271,
+    "output_tokens": 180,
+    "cost_usd": 0.00037272,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:58:59+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p06_qtextile_quote.pdf",
+    "defenses": [
+      "code",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22961,
+    "cache_read_tokens": 22444,
+    "cache_write_tokens": 273,
+    "output_tokens": 182,
+    "cost_usd": 0.00037397,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:59:02+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p07_longwharf_quote.pdf",
+    "defenses": [
+      "code",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22970,
+    "cache_read_tokens": 22444,
+    "cache_write_tokens": 282,
+    "output_tokens": 197,
+    "cost_usd": 0.00038259,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:59:07+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p08_chapelst_email.eml",
+    "defenses": [
+      "code",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22986,
+    "cache_read_tokens": 22445,
+    "cache_write_tokens": 297,
+    "output_tokens": 179,
+    "cost_usd": 0.00037548,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:59:11+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p09_westville_email.eml",
+    "defenses": [
+      "code",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 23000,
+    "cache_read_tokens": 22445,
+    "cache_write_tokens": 311,
+    "output_tokens": 203,
+    "cost_usd": 0.00038923,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:59:15+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p10_eastrock_email.eml",
+    "defenses": [
+      "code",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 23027,
+    "cache_read_tokens": 22445,
+    "cache_write_tokens": 338,
+    "output_tokens": 238,
+    "cost_usd": 0.0004101,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:59:19+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p11_yorkst_quote.html",
+    "defenses": [
+      "code",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22944,
+    "cache_read_tokens": 22444,
+    "cache_write_tokens": 256,
+    "output_tokens": 201,
+    "cost_usd": 0.00038134,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:59:22+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p12_bluehen_quote.pdf",
+    "defenses": [
+      "code",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22952,
+    "cache_read_tokens": 22443,
+    "cache_write_tokens": 265,
+    "output_tokens": 195,
+    "cost_usd": 0.00037946,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:59:26+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v01_elmcity_visible_price_cut.html",
+    "defenses": [
+      "code",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 23016,
+    "cache_read_tokens": 22447,
+    "cache_write_tokens": 325,
+    "output_tokens": 196,
+    "cost_usd": 0.0003875,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:59:30+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v02_ivyprint_visible_vendor_swap.html",
+    "defenses": [
+      "code",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 23010,
+    "cache_read_tokens": 22447,
+    "cache_write_tokens": 319,
+    "output_tokens": 199,
+    "cost_usd": 0.00038825,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:59:33+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v03_harborstitch_visible_tool_request.html",
+    "defenses": [
+      "code",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 23076,
+    "cache_read_tokens": 22449,
+    "cache_write_tokens": 383,
+    "output_tokens": 225,
+    "cost_usd": 0.00040926,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:59:37+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v04_westville_visible_correction.eml",
+    "defenses": [
+      "code",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 23078,
+    "cache_read_tokens": 22448,
+    "cache_write_tokens": 386,
+    "output_tokens": 189,
+    "cost_usd": 0.00039163,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:59:41+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p01_bluehen_quote.html",
+    "defenses": [
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22743,
+    "cache_read_tokens": 11165,
+    "cache_write_tokens": 11334,
+    "output_tokens": 131,
+    "cost_usd": 0.0016183,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:59:45+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p02_elmcity_quote.html",
+    "defenses": [
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22752,
+    "cache_read_tokens": 22294,
+    "cache_write_tokens": 214,
+    "output_tokens": 130,
+    "cost_usd": 0.00033909,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:59:49+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p03_ivyprint_catalog.html",
+    "defenses": [
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22745,
+    "cache_read_tokens": 22294,
+    "cache_write_tokens": 207,
+    "output_tokens": 152,
+    "cost_usd": 0.00034922,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:59:52+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p04_harborstitch_quote.html",
+    "defenses": [
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22741,
+    "cache_read_tokens": 22296,
+    "cache_write_tokens": 201,
+    "output_tokens": 134,
+    "cost_usd": 0.00033948,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T19:59:56+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p05_maplemills_quote.pdf",
+    "defenses": [
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22722,
+    "cache_read_tokens": 22294,
+    "cache_write_tokens": 184,
+    "output_tokens": 131,
+    "cost_usd": 0.00033584,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:00:00+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p06_qtextile_quote.pdf",
+    "defenses": [
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22766,
+    "cache_read_tokens": 22294,
+    "cache_write_tokens": 228,
+    "output_tokens": 136,
+    "cost_usd": 0.00034384,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:00:03+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p07_longwharf_quote.pdf",
+    "defenses": [
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22741,
+    "cache_read_tokens": 22294,
+    "cache_write_tokens": 203,
+    "output_tokens": 125,
+    "cost_usd": 0.00033522,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:00:07+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p08_chapelst_email.eml",
+    "defenses": [
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22748,
+    "cache_read_tokens": 22295,
+    "cache_write_tokens": 209,
+    "output_tokens": 134,
+    "cost_usd": 0.00034048,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:00:11+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p09_westville_email.eml",
+    "defenses": [
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22878,
+    "cache_read_tokens": 22295,
+    "cache_write_tokens": 339,
+    "output_tokens": 134,
+    "cost_usd": 0.00035673,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:00:14+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p10_eastrock_email.eml",
+    "defenses": [
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22767,
+    "cache_read_tokens": 22295,
+    "cache_write_tokens": 228,
+    "output_tokens": 143,
+    "cost_usd": 0.00034735,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:00:19+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p11_yorkst_quote.html",
+    "defenses": [
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22713,
+    "cache_read_tokens": 22294,
+    "cache_write_tokens": 175,
+    "output_tokens": 132,
+    "cost_usd": 0.00033522,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:00:22+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p12_bluehen_quote.pdf",
+    "defenses": [
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22739,
+    "cache_read_tokens": 22293,
+    "cache_write_tokens": 202,
+    "output_tokens": 98,
+    "cost_usd": 0.00032158,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:00:26+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v01_elmcity_visible_price_cut.html",
+    "defenses": [
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22762,
+    "cache_read_tokens": 22297,
+    "cache_write_tokens": 221,
+    "output_tokens": 130,
+    "cost_usd": 0.00033999,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:00:31+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v02_ivyprint_visible_vendor_swap.html",
+    "defenses": [
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22755,
+    "cache_read_tokens": 22297,
+    "cache_write_tokens": 214,
+    "output_tokens": 162,
+    "cost_usd": 0.00035512,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:00:35+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v03_harborstitch_visible_tool_request.html",
+    "defenses": [
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22812,
+    "cache_read_tokens": 22299,
+    "cache_write_tokens": 269,
+    "output_tokens": 152,
+    "cost_usd": 0.00035701,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:00:38+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v04_westville_visible_correction.eml",
+    "defenses": [
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22812,
+    "cache_read_tokens": 22298,
+    "cache_write_tokens": 270,
+    "output_tokens": 147,
+    "cost_usd": 0.00035463,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:01:07+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a01_elmcity_sr_only_sku_swap.html",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21494,
+    "cache_read_tokens": 20976,
+    "cache_write_tokens": 274,
+    "output_tokens": 267,
+    "cost_usd": 0.00040191,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:01:12+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a01_elmcity_sr_only_sku_swap.html",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21494,
+    "cache_read_tokens": 21250,
+    "cache_write_tokens": 0,
+    "output_tokens": 294,
+    "cost_usd": 0.0003839,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:01:18+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a01_elmcity_sr_only_sku_swap.html",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21494,
+    "cache_read_tokens": 21250,
+    "cache_write_tokens": 0,
+    "output_tokens": 336,
+    "cost_usd": 0.0004049,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:01:23+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21460,
+    "cache_read_tokens": 20976,
+    "cache_write_tokens": 240,
+    "output_tokens": 244,
+    "cost_usd": 0.00038616,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:01:29+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21460,
+    "cache_read_tokens": 21216,
+    "cache_write_tokens": 0,
+    "output_tokens": 407,
+    "cost_usd": 0.00044006,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:01:34+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21460,
+    "cache_read_tokens": 21216,
+    "cache_write_tokens": 0,
+    "output_tokens": 232,
+    "cost_usd": 0.00035256,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:01:38+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a01_elmcity_sr_only_sku_swap.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22893,
+    "cache_read_tokens": 22288,
+    "cache_write_tokens": 361,
+    "output_tokens": 133,
+    "cost_usd": 0.0003589,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:01:41+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a01_elmcity_sr_only_sku_swap.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22895,
+    "cache_read_tokens": 22330,
+    "cache_write_tokens": 321,
+    "output_tokens": 156,
+    "cost_usd": 0.00036583,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:01:45+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a01_elmcity_sr_only_sku_swap.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22897,
+    "cache_read_tokens": 22330,
+    "cache_write_tokens": 323,
+    "output_tokens": 136,
+    "cost_usd": 0.00035608,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:01:49+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22885,
+    "cache_read_tokens": 22288,
+    "cache_write_tokens": 353,
+    "output_tokens": 189,
+    "cost_usd": 0.0003859,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:01:53+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22883,
+    "cache_read_tokens": 22330,
+    "cache_write_tokens": 309,
+    "output_tokens": 227,
+    "cost_usd": 0.00039983,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:01:57+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22881,
+    "cache_read_tokens": 22330,
+    "cache_write_tokens": 307,
+    "output_tokens": 162,
+    "cost_usd": 0.00036708,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:03:04+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a01_elmcity_sr_only_sku_swap.html",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21461,
+    "cache_read_tokens": 21018,
+    "cache_write_tokens": 199,
+    "output_tokens": 284,
+    "cost_usd": 0.00040146,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:03:09+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a01_elmcity_sr_only_sku_swap.html",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21461,
+    "cache_read_tokens": 21217,
+    "cache_write_tokens": 0,
+    "output_tokens": 374,
+    "cost_usd": 0.00042357,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:03:15+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a01_elmcity_sr_only_sku_swap.html",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21461,
+    "cache_read_tokens": 21217,
+    "cache_write_tokens": 0,
+    "output_tokens": 334,
+    "cost_usd": 0.00040357,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:03:20+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21447,
+    "cache_read_tokens": 21018,
+    "cache_write_tokens": 185,
+    "output_tokens": 257,
+    "cost_usd": 0.00038621,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:03:27+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21447,
+    "cache_read_tokens": 21203,
+    "cache_write_tokens": 0,
+    "output_tokens": 322,
+    "cost_usd": 0.00039743,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:03:32+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21447,
+    "cache_read_tokens": 21203,
+    "cache_write_tokens": 0,
+    "output_tokens": 228,
+    "cost_usd": 0.00035043,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:03:36+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a01_elmcity_sr_only_sku_swap.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22863,
+    "cache_read_tokens": 22330,
+    "cache_write_tokens": 289,
+    "output_tokens": 172,
+    "cost_usd": 0.00036983,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:03:41+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a01_elmcity_sr_only_sku_swap.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22863,
+    "cache_read_tokens": 22330,
+    "cache_write_tokens": 289,
+    "output_tokens": 140,
+    "cost_usd": 0.00035383,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:03:45+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a01_elmcity_sr_only_sku_swap.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22863,
+    "cache_read_tokens": 22330,
+    "cache_write_tokens": 289,
+    "output_tokens": 173,
+    "cost_usd": 0.00037033,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:03:48+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22851,
+    "cache_read_tokens": 22330,
+    "cache_write_tokens": 277,
+    "output_tokens": 145,
+    "cost_usd": 0.00035483,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:03:52+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22855,
+    "cache_read_tokens": 22330,
+    "cache_write_tokens": 281,
+    "output_tokens": 137,
+    "cost_usd": 0.00035133,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:03:55+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22849,
+    "cache_read_tokens": 22330,
+    "cache_write_tokens": 275,
+    "output_tokens": 151,
+    "cost_usd": 0.00035758,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:04:20+00:00",
+    "document": "data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21447,
+    "cache_read_tokens": 21203,
+    "cache_write_tokens": 0,
+    "output_tokens": 284,
+    "cost_usd": 0.00037843,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:04:26+00:00",
+    "document": "data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21447,
+    "cache_read_tokens": 21203,
+    "cache_write_tokens": 0,
+    "output_tokens": 293,
+    "cost_usd": 0.00038293,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:04:31+00:00",
+    "document": "data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21447,
+    "cache_read_tokens": 21203,
+    "cache_write_tokens": 0,
+    "output_tokens": 296,
+    "cost_usd": 0.00038443,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:04:57+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a01_elmcity_sr_only_sku_swap.html",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21461,
+    "cache_read_tokens": 21217,
+    "cache_write_tokens": 0,
+    "output_tokens": 457,
+    "cost_usd": 0.00046507,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:05:03+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a01_elmcity_sr_only_sku_swap.html",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21461,
+    "cache_read_tokens": 21217,
+    "cache_write_tokens": 0,
+    "output_tokens": 422,
+    "cost_usd": 0.00044757,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:05:09+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a01_elmcity_sr_only_sku_swap.html",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21461,
+    "cache_read_tokens": 21217,
+    "cache_write_tokens": 0,
+    "output_tokens": 370,
+    "cost_usd": 0.00042157,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:05:14+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21447,
+    "cache_read_tokens": 21203,
+    "cache_write_tokens": 0,
+    "output_tokens": 346,
+    "cost_usd": 0.00040943,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:05:20+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21447,
+    "cache_read_tokens": 21203,
+    "cache_write_tokens": 0,
+    "output_tokens": 298,
+    "cost_usd": 0.00038543,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:05:26+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21447,
+    "cache_read_tokens": 21203,
+    "cache_write_tokens": 0,
+    "output_tokens": 319,
+    "cost_usd": 0.00039593,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:05:29+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a01_elmcity_sr_only_sku_swap.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22865,
+    "cache_read_tokens": 22330,
+    "cache_write_tokens": 291,
+    "output_tokens": 103,
+    "cost_usd": 0.00033558,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:05:38+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a01_elmcity_sr_only_sku_swap.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22867,
+    "cache_read_tokens": 22330,
+    "cache_write_tokens": 293,
+    "output_tokens": 103,
+    "cost_usd": 0.00033583,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:05:43+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a01_elmcity_sr_only_sku_swap.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22865,
+    "cache_read_tokens": 22330,
+    "cache_write_tokens": 291,
+    "output_tokens": 177,
+    "cost_usd": 0.00037258,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:05:50+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22853,
+    "cache_read_tokens": 22330,
+    "cache_write_tokens": 279,
+    "output_tokens": 139,
+    "cost_usd": 0.00035208,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:05:54+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22853,
+    "cache_read_tokens": 22330,
+    "cache_write_tokens": 279,
+    "output_tokens": 147,
+    "cost_usd": 0.00035608,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:05:58+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22853,
+    "cache_read_tokens": 22330,
+    "cache_write_tokens": 279,
+    "output_tokens": 138,
+    "cost_usd": 0.00035158,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:07:01+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a01_elmcity_sr_only_sku_swap.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22827,
+    "cache_read_tokens": 11165,
+    "cache_write_tokens": 11418,
+    "output_tokens": 136,
+    "cost_usd": 0.0016313,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:07:07+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a01_elmcity_sr_only_sku_swap.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22825,
+    "cache_read_tokens": 22330,
+    "cache_write_tokens": 251,
+    "output_tokens": 156,
+    "cost_usd": 0.00035708,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:07:10+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a01_elmcity_sr_only_sku_swap.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22825,
+    "cache_read_tokens": 22330,
+    "cache_write_tokens": 251,
+    "output_tokens": 180,
+    "cost_usd": 0.00036908,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:07:14+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22829,
+    "cache_read_tokens": 22330,
+    "cache_write_tokens": 255,
+    "output_tokens": 151,
+    "cost_usd": 0.00035508,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:07:18+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22833,
+    "cache_read_tokens": 22330,
+    "cache_write_tokens": 259,
+    "output_tokens": 143,
+    "cost_usd": 0.00035158,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:07:21+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22829,
+    "cache_read_tokens": 22330,
+    "cache_write_tokens": 255,
+    "output_tokens": 135,
+    "cost_usd": 0.00034708,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:07:29+00:00",
+    "document": "data/my_attacks/a01_elmcity_sr_only_sku_swap.html",
+    "defenses": [
+      "code"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21525,
+    "cache_read_tokens": 10514,
+    "cache_write_tokens": 10767,
+    "output_tokens": 228,
+    "cost_usd": 0.00158942,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:07:34+00:00",
+    "document": "data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [
+      "code"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21527,
+    "cache_read_tokens": 20986,
+    "cache_write_tokens": 297,
+    "output_tokens": 214,
+    "cost_usd": 0.00037839,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:07:39+00:00",
+    "document": "data/my_attacks/a01_elmcity_sr_only_sku_swap.html",
+    "defenses": [
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21327,
+    "cache_read_tokens": 20842,
+    "cache_write_tokens": 241,
+    "output_tokens": 221,
+    "cost_usd": 0.00037345,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:07:43+00:00",
+    "document": "data/my_attacks/a02_westville_invisible_render_moq.pdf",
+    "defenses": [
+      "design"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 21313,
+    "cache_read_tokens": 20842,
+    "cache_write_tokens": 227,
+    "output_tokens": 144,
+    "cost_usd": 0.0003332,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:08:08+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p01_bluehen_quote.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22841,
+    "cache_read_tokens": 11173,
+    "cache_write_tokens": 11424,
+    "output_tokens": 121,
+    "cost_usd": 0.00162463,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:08:12+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p02_elmcity_quote.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22834,
+    "cache_read_tokens": 22310,
+    "cache_write_tokens": 280,
+    "output_tokens": 125,
+    "cost_usd": 0.000345,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:08:16+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p03_ivyprint_catalog.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22833,
+    "cache_read_tokens": 22310,
+    "cache_write_tokens": 279,
+    "output_tokens": 129,
+    "cost_usd": 0.00034688,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:08:19+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p04_harborstitch_quote.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22859,
+    "cache_read_tokens": 22312,
+    "cache_write_tokens": 303,
+    "output_tokens": 129,
+    "cost_usd": 0.00034989,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:08:22+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p05_maplemills_quote.pdf",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22821,
+    "cache_read_tokens": 22310,
+    "cache_write_tokens": 267,
+    "output_tokens": 118,
+    "cost_usd": 0.00033988,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:08:26+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p06_qtextile_quote.pdf",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22823,
+    "cache_read_tokens": 22310,
+    "cache_write_tokens": 269,
+    "output_tokens": 133,
+    "cost_usd": 0.00034763,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:08:30+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p07_longwharf_quote.pdf",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22838,
+    "cache_read_tokens": 22310,
+    "cache_write_tokens": 284,
+    "output_tokens": 119,
+    "cost_usd": 0.0003425,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:08:35+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p08_chapelst_email.eml",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22856,
+    "cache_read_tokens": 22311,
+    "cache_write_tokens": 301,
+    "output_tokens": 133,
+    "cost_usd": 0.00035163,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:08:39+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p09_westville_email.eml",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22866,
+    "cache_read_tokens": 22311,
+    "cache_write_tokens": 311,
+    "output_tokens": 120,
+    "cost_usd": 0.00034638,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:08:42+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p10_eastrock_email.eml",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22891,
+    "cache_read_tokens": 22311,
+    "cache_write_tokens": 336,
+    "output_tokens": 123,
+    "cost_usd": 0.00035101,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:08:46+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p11_yorkst_quote.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22816,
+    "cache_read_tokens": 22310,
+    "cache_write_tokens": 262,
+    "output_tokens": 115,
+    "cost_usd": 0.00033775,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:08:50+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/practice_docs/p12_bluehen_quote.pdf",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22820,
+    "cache_read_tokens": 22309,
+    "cache_write_tokens": 267,
+    "output_tokens": 116,
+    "cost_usd": 0.00033886,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:08:53+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v01_elmcity_visible_price_cut.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22884,
+    "cache_read_tokens": 22313,
+    "cache_write_tokens": 327,
+    "output_tokens": 135,
+    "cost_usd": 0.0003559,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:08:57+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v02_ivyprint_visible_vendor_swap.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22874,
+    "cache_read_tokens": 22313,
+    "cache_write_tokens": 317,
+    "output_tokens": 134,
+    "cost_usd": 0.00035415,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:09:01+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v03_harborstitch_visible_tool_request.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22944,
+    "cache_read_tokens": 22315,
+    "cache_write_tokens": 385,
+    "output_tokens": 146,
+    "cost_usd": 0.00036868,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:09:05+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/defense_probes/v04_westville_visible_correction.eml",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22944,
+    "cache_read_tokens": 22314,
+    "cache_write_tokens": 386,
+    "output_tokens": 139,
+    "cost_usd": 0.00036529,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:09:20+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/exam_docs/e01_quote.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22771,
+    "cache_read_tokens": 22280,
+    "cache_write_tokens": 247,
+    "output_tokens": 138,
+    "cost_usd": 0.00034708,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:09:24+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/exam_docs/e02_quote.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22777,
+    "cache_read_tokens": 22280,
+    "cache_write_tokens": 253,
+    "output_tokens": 141,
+    "cost_usd": 0.00034933,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:09:27+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/exam_docs/e03_quote.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22781,
+    "cache_read_tokens": 22280,
+    "cache_write_tokens": 257,
+    "output_tokens": 127,
+    "cost_usd": 0.00034283,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:09:32+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/exam_docs/e04_catalog.html",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22779,
+    "cache_read_tokens": 22280,
+    "cache_write_tokens": 255,
+    "output_tokens": 127,
+    "cost_usd": 0.00034258,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:09:36+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/exam_docs/e05_quote.pdf",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22775,
+    "cache_read_tokens": 22280,
+    "cache_write_tokens": 251,
+    "output_tokens": 126,
+    "cost_usd": 0.00034158,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:09:39+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/exam_docs/e06_quote.pdf",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22785,
+    "cache_read_tokens": 22280,
+    "cache_write_tokens": 261,
+    "output_tokens": 93,
+    "cost_usd": 0.00032633,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:09:43+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/exam_docs/e07_quote.pdf",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22786,
+    "cache_read_tokens": 22280,
+    "cache_write_tokens": 262,
+    "output_tokens": 136,
+    "cost_usd": 0.00034795,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:09:47+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/exam_docs/e08_email.eml",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22797,
+    "cache_read_tokens": 22281,
+    "cache_write_tokens": 272,
+    "output_tokens": 148,
+    "cost_usd": 0.00035521,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:09:50+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/exam_docs/e09_email.eml",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22868,
+    "cache_read_tokens": 22281,
+    "cache_write_tokens": 343,
+    "output_tokens": 128,
+    "cost_usd": 0.00035409,
+    "priced_as": "gpt-6-luna"
+  },
+  {
+    "time": "2026-10-18T20:09:55+00:00",
+    "document": "C:/Users/megha/OneDrive/Desktop/AI Foundations/hw6/data/exam_docs/e10_email.eml",
+    "defenses": [
+      "code",
+      "design",
+      "prompt"
+    ],
+    "model": "gpt-5.6-luna",
+    "requests": 2,
+    "input_tokens": 22825,
+    "cache_read_tokens": 22281,
+    "cache_write_tokens": 300,
+    "output_tokens": 140,
+    "cost_usd": 0.00035471,
+    "priced_as": "gpt-6-luna"
   }
 ]

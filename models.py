@@ -7,6 +7,7 @@ from pydantic import BaseModel, Field
 
 Decision = Literal["recommend", "do_not_recommend"]
 CheckName = Literal["Approved vendor", "Price", "Lead time", "Minimum order"]
+Layer = Literal["code", "design", "prompt"]
 
 
 class VendorDecision(BaseModel):
@@ -21,6 +22,22 @@ class VendorDecision(BaseModel):
     min_order: int | None = Field(description="Minimum order in units. null if the document does not say.")
     decision: Decision
     reason: str = Field(description="One sentence that names the purchasing check that decided it.")
+    warnings: list[str] = Field(
+        default_factory=list,
+        description="Filled in by the program, leave empty: hidden text removed, suspicious notes, figures replaced.",
+    )
+
+
+class ExtractedFacts(BaseModel):
+    """With the design layer on, this is all the document-reading model returns: facts, no decision.
+    The program applies the purchasing rules and writes the reason."""
+
+    vendor: str = Field(description="Company that wrote or sent the document, from its header, letterhead, signature, or sender.")
+    sku: str | None = Field(description="Campus Customs SKU, e.g. CC-HD-006. null if the document does not give one.")
+    item: str | None = Field(default=None, description="Item name as written in the document.")
+    unit_price: float | None = Field(description="Quoted unit price in USD. null if the document does not say.")
+    lead_time_days: int | None = Field(description="Lead time in days as quoted. null if the document does not say.")
+    min_order: int | None = Field(description="Minimum order in units. null if the document does not say.")
 
 
 class CheckResult(BaseModel):
@@ -60,6 +77,7 @@ class DocumentText(BaseModel):
     text: str
     hidden_parts_removed: int = Field(description="Hidden HTML parts (invisible to a human reader) stripped from the text.")
     quoted_fields: QuotedFields = Field(description="Figures from the labelled quote fields, read in Python. These are the facts to report.")
+    warnings: list[str] = Field(default_factory=list, description="What the program removed or flagged before the model saw the text.")
 
 
 class TrapCall(BaseModel):
@@ -84,6 +102,7 @@ class AuditEntry(BaseModel):
 
     time: str
     document: str
+    defenses: list[Layer] = Field(default_factory=list, description="Defense layers that were on for this run.")
     tool_calls: list[ToolCallRecord]
     final_answer: VendorDecision | None
     error: str | None = None
@@ -94,6 +113,7 @@ class UsageEntry(BaseModel):
 
     time: str
     document: str
+    defenses: list[Layer] = Field(default_factory=list)
     model: str
     requests: int
     input_tokens: int = Field(description="All input tokens, including cached ones.")
@@ -102,3 +122,11 @@ class UsageEntry(BaseModel):
     output_tokens: int = Field(description="Output tokens, including reasoning tokens.")
     cost_usd: float
     priced_as: str = Field(description="Which prices.json entry the cost was computed with.")
+
+
+class HumanSignoff(BaseModel):
+    """A person's approval for one email or payment. send_email / approve_payment refuse to act without one,
+    and the document-reading model can never create one: it is only made by code a human runs."""
+
+    approver: str
+    note: str

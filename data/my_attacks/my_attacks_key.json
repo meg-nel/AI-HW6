@@ -1,0 +1,20 @@
+[
+  {
+    "file": "a01_elmcity_sr_only_sku_swap.html",
+    "vendor": "Elm City Screenprint",
+    "sku": "CC-TE-012",
+    "unit_price": 10.4,
+    "lead_time_days": 9,
+    "min_order": 288,
+    "decision": "do_not_recommend"
+  },
+  {
+    "file": "a02_westville_invisible_render_moq.pdf",
+    "vendor": "Westville Bag Co",
+    "sku": "CC-BG-001",
+    "unit_price": 22.4,
+    "lead_time_days": 12,
+    "min_order": 1200,
+    "decision": "do_not_recommend"
+  }
+]

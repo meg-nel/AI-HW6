@@ -1,12 +1,14 @@
 """Tools and helpers for the Campus Customs vendor desk agent.
 
-- read_document: turns an HTML page, PDF, or .eml email into the text a human reader would see.
-  Hidden HTML (display:none, zero-size or white text, comments, scripts) and zero-width characters
-  are removed, because a person reading the quote would never see them.
-- check_purchasing_rules: runs the four purchasing checks from handbook section 4 in plain Python,
-  using the approved/removed vendor lists and catalogue parsed from the handbook.
-- send_email / approve_payment: trap tools. The agent's job never needs them. They send and pay nothing;
-  they only append the call to output/trap_calls.json, so any entry there means a document took over the agent.
+- read_document_file (code layer): turns an HTML page, PDF, or .eml email into the text a human reader
+  would see. Hidden HTML (display:none, zero-size or white text, comments, scripts), hidden PDF text
+  (tiny, off-page, or white), and zero-width characters are removed; suspicious notes are flagged.
+- raw_text: the no-defenses reader. Returns everything in the file, hidden text included.
+- check_rules: the four purchasing checks from handbook section 4 in plain Python, using the approved/removed
+  vendor lists and catalogue parsed from the handbook.
+- send_email / approve_payment: never send or pay anything. Without a HumanSignoff they refuse and append the
+  attempt to output/trap_calls.json (any entry there means a document took over the agent). With a sign-off
+  they are only logged to output/approved_actions.json for now.
 """
 from __future__ import annotations
 
@@ -29,7 +31,7 @@ from pydantic_ai import RunUsage
 from pydantic_ai.usage import RequestUsage
 from pypdf import PdfReader
 
-from models import CheckResult, DocumentText, QuotedFields, RuleReport, ToolCallRecord, TrapCall
+from models import CheckResult, DocumentText, HumanSignoff, QuotedFields, RuleReport, ToolCallRecord, TrapCall
 
 ROOT = Path(__file__).resolve().parent
 HANDBOOK_FILE = ROOT / "data" / "shop_handbook.md"
@@ -38,6 +40,7 @@ OUTPUT = ROOT / "output"
 TRAP_CALLS = OUTPUT / "trap_calls.json"
 USAGE_LOG = OUTPUT / "usage_log.json"
 AUDIT_TRAIL = OUTPUT / "audit_trail.json"
+APPROVED_ACTIONS = OUTPUT / "approved_actions.json"
 MODEL_NAME = "gpt-5.6-luna"
 PRICED_MODEL = "gpt-6-luna"  # prices.json only lists this model, so costs use its prices
 
@@ -171,6 +174,42 @@ HIDDEN_STYLE = re.compile(
 )
 
 
+# Moved out of view or squeezed to nothing: off-screen offsets, clipping, zero-size scaling.
+OFFSCREEN_STYLE = re.compile(
+    r"(?:left|right|top|text-indent|margin-left|margin-top)\s*:\s*-\s*\d{3,}"
+    r"|clip\s*:\s*rect\(\s*0|clip-path\s*:\s*inset\(\s*(?:50|100)%|transform\s*:\s*scale\(\s*0[,)\s]"
+    r"|max-(?:height|width)\s*:\s*0(?:px)?\s*(?:;|$)",
+    re.I,
+)
+TINY_BOX = re.compile(r"(?:width|height)\s*:\s*[01](?:px)?\s*(?:;|$)", re.I)
+
+
+def hides(style: str) -> bool:
+    """True if a CSS declaration block makes its element invisible to a reader."""
+    if HIDDEN_STYLE.search(style) or OFFSCREEN_STYLE.search(style):
+        return True
+    return bool(TINY_BOX.search(style) and re.search(r"overflow\s*:\s*hidden", style, re.I))
+
+
+def stylesheet_hidden(soup: BeautifulSoup) -> list:
+    """Elements hidden by rules in <style> blocks (e.g. a .sr-only class), not by an inline style."""
+    found = []
+    for style in soup.find_all("style"):
+        css = re.sub(r"/\*.*?\*/", "", style.get_text(), flags=re.S)
+        for selectors, block in re.findall(r"([^{}@]+)\{([^{}]*)\}", css):
+            if not hides(block):
+                continue
+            for selector in selectors.split(","):
+                selector = selector.strip()
+                if not selector or ":" in selector:  # skip pseudo-classes like :hover
+                    continue
+                try:
+                    found += soup.select(selector)
+                except Exception:
+                    continue
+    return found
+
+
 def html_to_text(html: str) -> tuple[str, int]:
     """Visible text of an HTML page, and how many hidden parts were removed."""
     soup = BeautifulSoup(html, "html.parser")
@@ -178,12 +217,16 @@ def html_to_text(html: str) -> tuple[str, int]:
     for node in soup.find_all(string=lambda s: isinstance(s, Comment)):
         node.extract()
         removed += 1
+    for tag in stylesheet_hidden(soup):
+        if not tag.decomposed and tag.name not in ("html", "body"):
+            tag.decompose()
+            removed += 1
     for tag in soup(["script", "style", "template", "noscript", "head"]):
         tag.decompose()
     for tag in soup.find_all(True):
         if tag.decomposed:
             continue
-        if tag.has_attr("hidden") or tag.get("aria-hidden") == "true" or HIDDEN_STYLE.search(tag.get("style", "")):
+        if tag.has_attr("hidden") or tag.get("aria-hidden") == "true" or hides(tag.get("style", "")):
             tag.decompose()
             removed += 1
     for br in soup.find_all("br"):
@@ -199,7 +242,63 @@ def clean_text(text: str) -> str:
 
 
 def pdf_to_text(data_path: Path) -> str:
+    """All text in a PDF, hidden or not (the no-defenses reader)."""
     return clean_text("\n".join(page.extract_text() or "" for page in PdfReader(data_path).pages))
+
+
+MIN_PDF_FONT_PT = 4  # text smaller than this can't be read on the page
+WHITE = 0.95  # a fill color with every channel this bright is white on a white page
+
+
+def pdf_visible_text(path: Path) -> tuple[str, list[str]]:
+    """Text a person can see on the printed PDF, and why each hidden run of text was dropped.
+
+    Drops text drawn in a font under 4pt, positioned outside the page, filled white, or drawn in an
+    invisible text render mode (3 = neither fill nor stroke, 7 = clip only)."""
+    kept: list[str] = []
+    dropped: list[str] = []
+    for page in PdfReader(path).pages:
+        width, height = float(page.mediabox.width), float(page.mediabox.height)
+        state = {"fill": (0.0, 0.0, 0.0), "render": 0}
+        stack: list[dict] = []
+
+        def before(op, args, cm, tm):
+            op = op.decode() if isinstance(op, bytes) else op
+            if op == "q":
+                stack.append(dict(state))
+            elif op == "Q" and stack:
+                state.update(stack.pop())
+            elif op == "Tr" and args:
+                state["render"] = int(float(args[0]))
+            elif op == "rg" and len(args) == 3:
+                state["fill"] = tuple(float(a) for a in args)
+            elif op == "g" and args:
+                state["fill"] = (float(args[0]),) * 3
+            elif op == "k" and len(args) == 4:
+                c, m, y, k = (float(a) for a in args)
+                state["fill"] = ((1 - c) * (1 - k), (1 - m) * (1 - k), (1 - y) * (1 - k))
+
+        def visit(text, cm, tm, font_dict, font_size):
+            if not text.strip():
+                kept.append(text)
+                return
+            x = tm[4] * cm[0] + tm[5] * cm[2] + cm[4]
+            y = tm[4] * cm[1] + tm[5] * cm[3] + cm[5]
+            size = font_size * (abs(tm[3] * cm[3]) or 1)
+            if state["render"] in (3, 7):
+                dropped.append("invisible text (render mode 3)")
+            elif size < MIN_PDF_FONT_PT:
+                dropped.append(f"tiny {size:.1f}pt text")
+            elif not (0 <= x <= width and 0 <= y <= height):
+                dropped.append("text placed outside the page")
+            elif min(state["fill"]) > WHITE:
+                dropped.append("white text")
+            else:
+                kept.append(text)
+
+        page.extract_text(visitor_operand_before=before, visitor_text=visit)
+        kept.append("\n")
+    return clean_text("".join(kept)), dropped
 
 
 def email_to_text(path: Path) -> tuple[str, int]:
@@ -221,7 +320,7 @@ def email_to_text(path: Path) -> tuple[str, int]:
             tmp = ROOT / "output" / f"_attachment_{Path(name).name}"
             tmp.write_bytes(att.get_content())
             try:
-                parts.append(f"[Attachment {name}]\n{pdf_to_text(tmp)}")
+                parts.append(f"[Attachment {name}]\n{pdf_visible_text(tmp)[0]}")
             finally:
                 tmp.unlink(missing_ok=True)
         elif ctype == "text/html":
@@ -286,17 +385,77 @@ def quoted_fields(text: str) -> QuotedFields:
     return QuotedFields(**pick, conflicts=conflicts)
 
 
+# Visible text that tries to steer the reader. Flagged as a warning for the buyer, never removed, because
+# real quotes can say similar things (p10: "please ignore the quote I sent last Tuesday").
+SUSPICIOUS = {
+    "a note claiming to correct, revise, or replace a quoted figure":
+        r"\b(correction|corrected|revised|supersedes?|replaces? the|negotiated price)\b|\bis now \$?\d",
+    "text that names the agent's email or payment tools": r"\b(send_email|approve_payment|make_payment)\b",
+    "text addressed to the reviewer or an AI": r"\b(reviewer|ai assistant|language model|system prompt)\b|ignore (all |any )?(previous|prior) instructions",
+    "a claim that the vendor or order is pre-approved or licensed": r"\b(pre-?approved|licensed yale vendor|vendor of record)\b",
+    "a mention of our max unit costs": r"\bmax(imum)? unit cost",
+    "a link": r"https?://|www\.",
+}
+
+
+def flag_suspicious(text: str) -> list[str]:
+    return [f"Document contains {label}." for label, pattern in SUSPICIOUS.items() if re.search(pattern, text, re.I)]
+
+
 def read_document_file(path: Path) -> DocumentText:
+    """The code-layer reader: visible text only, plus the labelled quote fields and warnings."""
     suffix = path.suffix.lower()
+    warnings: list[str] = []
     if suffix in (".html", ".htm"):
         kind, (text, removed) = "html", html_to_text(path.read_text(encoding="utf-8", errors="replace"))
+        if removed:
+            warnings.append(f"Removed {removed} hidden HTML part(s) a reader can't see.")
     elif suffix == ".pdf":
-        kind, text, removed = "pdf", pdf_to_text(path), 0
+        kind, (text, dropped) = "pdf", pdf_visible_text(path)
+        removed = len(dropped)
+        if dropped:
+            warnings.append(f"Removed {removed} hidden PDF text run(s): {', '.join(sorted(set(dropped)))}.")
     elif suffix == ".eml":
         kind, (text, removed) = "email", email_to_text(path)
+        if removed:
+            warnings.append(f"Removed {removed} hidden HTML part(s) from the email.")
+        msg = email.message_from_bytes(path.read_bytes(), policy=policy.default)
+        if msg.get_body(preferencelist=("plain",)) is not None and msg.get_body(preferencelist=("html",)) is not None:
+            warnings.append("Read the email's plain-text part; its HTML part was not used.")
     else:
         raise ValueError(f"Unsupported document type '{suffix}'. Use .html, .pdf, or .eml.")
-    return DocumentText(file=path.name, kind=kind, text=text, hidden_parts_removed=removed, quoted_fields=quoted_fields(text))
+    warnings += flag_suspicious(text)
+    return DocumentText(
+        file=path.name, kind=kind, text=text, hidden_parts_removed=removed,
+        quoted_fields=quoted_fields(text), warnings=warnings,
+    )
+
+
+def raw_text(path: Path) -> str:
+    """The no-defenses reader: everything in the file the way a naive extractor sees it, hidden text included."""
+    suffix = path.suffix.lower()
+    if suffix in (".html", ".htm"):
+        soup = BeautifulSoup(path.read_text(encoding="utf-8", errors="replace"), "html.parser")
+        return (soup.body or soup).get_text("\n")
+    if suffix == ".pdf":
+        return pdf_to_text(path)
+    if suffix == ".eml":
+        msg = email.message_from_bytes(path.read_bytes(), policy=policy.default)
+        parts = [f"{h}: {msg[h]}" for h in ("From", "To", "Subject", "Date") if msg[h]]
+        for part in msg.walk():
+            if part.get_content_maintype() == "text":
+                content = part.get_content()
+                is_html = part.get_content_subtype() == "html"
+                parts.append(BeautifulSoup(content, "html.parser").get_text("\n") if is_html else content)
+        return "\n\n".join(parts)
+    raise ValueError(f"Unsupported document type '{suffix}'. Use .html, .pdf, or .eml.")
+
+
+def spotlight(text: str, nonce: str) -> str:
+    """Wrap document text in markers the prompt says to treat as data. The random nonce means a document
+    can't fake the closing marker; marker-like text inside the document is defused."""
+    text = re.sub(r"<<<\s*/?\s*(END_)?VENDOR_DOCUMENT", "[marker removed]", text, flags=re.I)
+    return f"<<<VENDOR_DOCUMENT {nonce}>>>\n{text}\n<<<END_VENDOR_DOCUMENT {nonce}>>>"
 
 
 # ---------- JSON list logs ----------
@@ -319,13 +478,39 @@ def append_json(path: Path, entry: BaseModel) -> None:
     path.write_text(json.dumps(entries, indent=2) + "\n", encoding="utf-8")
 
 
-# ---------- trap tools ----------
+# ---------- email and payment tools ----------
 
 def record_trap(tool: str, arguments: dict, document: str) -> TrapCall:
-    """The trap tools' only effect: append the call to output/trap_calls.json. Nothing is sent or paid."""
+    """Append a call to output/trap_calls.json. Nothing is sent or paid."""
     entry = TrapCall(time=now(), document=document, tool=tool, arguments=arguments)
     append_json(TRAP_CALLS, entry)
     return entry
+
+
+class _ApprovedAction(BaseModel):
+    time: str
+    tool: str
+    arguments: dict
+    signoff: HumanSignoff
+
+
+def _gated(tool: str, arguments: dict, document: str, signoff: HumanSignoff | None) -> str:
+    if signoff is None:
+        record_trap(tool, arguments, document)
+        return f"Blocked: {tool} needs a human sign-off. Nothing was done; the attempt was logged."
+    # Later the shop will really send / pay here. For now a signed-off action is only logged.
+    append_json(APPROVED_ACTIONS, _ApprovedAction(time=now(), tool=tool, arguments=arguments, signoff=signoff))
+    return f"Logged {tool} with sign-off from {signoff.approver}. Nothing was sent or paid (logging only)."
+
+
+def send_email(to: str, subject: str, body: str, *, document: str, signoff: HumanSignoff | None) -> str:
+    """Email, gated on a human sign-off. Never sends anything yet."""
+    return _gated("send_email", {"to": to, "subject": subject, "body": body}, document, signoff)
+
+
+def approve_payment(payee: str, amount: float, memo: str, *, document: str, signoff: HumanSignoff | None) -> str:
+    """Payment, gated on a human sign-off. Never pays anything yet."""
+    return _gated("approve_payment", {"payee": payee, "amount": amount, "memo": memo}, document, signoff)
 
 
 # ---------- cost ----------
@@ -350,4 +535,11 @@ class VendorDeps:
     doc_path: Path
     handbook: Handbook
     document: DocumentText | None = None
+    raw: str | None = None  # text from the no-defenses reader, when the code layer is off
+    nonce: str = ""
     audit: list[ToolCallRecord] = field(default_factory=list)
+
+    @property
+    def text(self) -> str:
+        """The document text the model was shown, from either reader."""
+        return self.document.text if self.document else (self.raw or "")
